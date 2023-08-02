@@ -13,3 +13,14 @@ target 'BasicNoteApp' do
   pod 'SwiftGen', '~> 6.1'
 
 end
+
+target 'UIComponents' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  
+  project 'UIComponents/UIComponents.xcodeproj'
+  
+
+  # Pods for BasicNoteApp
+  pod 'SwiftGen', '~> 6.1'
+
+end
