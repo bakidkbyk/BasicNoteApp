@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+import Foundation
+
+public class Localize {
+    
+    public static let shared = Localize()
+    
+    public var strings: [String: String] = [:]
+    
+    public init() {}
+}
