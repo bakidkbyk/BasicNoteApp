@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AEB5C5DD1FF9C0CF11994475 /* Pods_UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC543CDA9F61AFFAD09560B9 /* Pods_UIComponents.framework */; };
 		FA7115012A7A7F3A003FF3E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA7115002A7A7F3A003FF3E4 /* Localizable.strings */; };
 		FA7115032A7A8051003FF3E4 /* UIImage+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7115022A7A8051003FF3E4 /* UIImage+Icons.swift */; };
 		FA7115052A7A8067003FF3E4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7115042A7A8067003FF3E4 /* Assets.swift */; };
@@ -18,8 +17,24 @@
 		FA71150F2A7A8132003FF3E4 /* UIImage+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71150E2A7A8132003FF3E4 /* UIImage+Images.swift */; };
 		FA7115112A7A8166003FF3E4 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7115102A7A8166003FF3E4 /* UIColor+Colors.swift */; };
 		FA7115132A7A83F7003FF3E4 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7115122A7A83F7003FF3E4 /* Localize.swift */; };
+		FAD638952A7A8BEF00F83932 /* Pods_UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC543CDA9F61AFFAD09560B9 /* Pods_UIComponents.framework */; };
+		FAD638962A7A8BEF00F83932 /* Pods_UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC543CDA9F61AFFAD09560B9 /* Pods_UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAF94F3F2A7A6E5D0007D010 /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF94F3E2A7A6E5D0007D010 /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAD638972A7A8BEF00F83932 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FAD638962A7A8BEF00F83932 /* Pods_UIComponents.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		009C57BCB6B9EF719032F3F1 /* Pods-UIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.release.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB5C5DD1FF9C0CF11994475 /* Pods_UIComponents.framework in Frameworks */,
+				FAD638952A7A8BEF00F83932 /* Pods_UIComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +178,7 @@
 				FAF94F382A7A6E5D0007D010 /* Frameworks */,
 				FAF94F392A7A6E5D0007D010 /* Resources */,
 				FAF94F4E2A7A74380007D010 /* SwiftGen */,
+				FAD638972A7A8BEF00F83932 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -415,6 +431,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,10 +441,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = UmitBakiDikbiyik.UIComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,6 +464,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,9 +474,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = UmitBakiDikbiyik.UIComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
