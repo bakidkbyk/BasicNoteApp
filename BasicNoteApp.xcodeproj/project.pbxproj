@@ -13,7 +13,23 @@
 		FA9BE7C12A79243100271907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9BE7C02A79243100271907 /* Assets.xcassets */; };
 		FA9BE7C42A79243100271907 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9BE7C22A79243100271907 /* LaunchScreen.storyboard */; };
 		FA9BE7CC2A7925FC00271907 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA9BE7CB2A7925FC00271907 /* .swiftlint.yml */; };
+		FAF94F4B2A7A6F700007D010 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF94F4A2A7A6F700007D010 /* UIComponents.framework */; };
+		FAF94F4C2A7A6F700007D010 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAF94F4A2A7A6F700007D010 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAF94F4D2A7A6F700007D010 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FAF94F4C2A7A6F700007D010 /* UIComponents.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		46C554BC63D47F1CB10208CD /* Pods_BasicNoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicNoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +42,8 @@
 		FA9BE7C32A79243100271907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA9BE7C52A79243100271907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9BE7CB2A7925FC00271907 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		FAF94F472A7A6EB90007D010 /* BasicNoteApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicNoteApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAF94F4A2A7A6F700007D010 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF94F4B2A7A6F700007D010 /* UIComponents.framework in Frameworks */,
 				257851A856470F6BEE84D69F /* Pods_BasicNoteApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +62,7 @@
 		076629EA096F0EC89FB0588D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAF94F4A2A7A6F700007D010 /* UIComponents.framework */,
 				46C554BC63D47F1CB10208CD /* Pods_BasicNoteApp.framework */,
 			);
 			name = Frameworks;
@@ -65,6 +85,7 @@
 				FA9BE7B52A79242F00271907 /* Products */,
 				7253C68030C90CFCCAF96431 /* Pods */,
 				076629EA096F0EC89FB0588D /* Frameworks */,
+				FAF94F472A7A6EB90007D010 /* BasicNoteApp-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +121,7 @@
 				FA9BE7B02A79242F00271907 /* Sources */,
 				FA9BE7B12A79242F00271907 /* Frameworks */,
 				FA9BE7B22A79242F00271907 /* Resources */,
+				FAF94F4D2A7A6F700007D010 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +144,7 @@
 				TargetAttributes = {
 					FA9BE7B32A79242F00271907 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -343,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6KBC8FTKD3;
@@ -360,6 +384,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = UmitBakiDikbiyik.BasicNoteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicNoteApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -371,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6KBC8FTKD3;
@@ -388,6 +415,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = UmitBakiDikbiyik.BasicNoteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicNoteApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
