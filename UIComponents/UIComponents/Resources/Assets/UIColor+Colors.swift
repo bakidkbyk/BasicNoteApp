@@ -14,6 +14,14 @@ public extension UIColor {
       return Asset.Colors.actionSecondary.color
   }
 
+  static var textPrimary: UIColor {
+      return Asset.Colors.textPrimary.color
+  }
+
+  static var textSecondary: UIColor {
+      return Asset.Colors.textSecondary.color
+  }
+
   static var appBorderColor: UIColor {
       return Asset.Colors.appBorderColor.color
   }
@@ -28,14 +36,6 @@ public extension UIColor {
 
   static var appYellow: UIColor {
       return Asset.Colors.appYellow.color
-  }
-
-  static var textPrimary: UIColor {
-      return Asset.Colors.textPrimary.color
-  }
-
-  static var textSecondary: UIColor {
-      return Asset.Colors.textSecondary.color
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
