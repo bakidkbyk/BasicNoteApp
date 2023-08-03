@@ -11,6 +11,8 @@ target 'BasicNoteApp' do
   # Pods for BasicNoteApp
   pod 'SwiftLint'
   pod 'SwiftGen', '~> 6.1'
+  pod 'TinyConstraints', '~> 4.0'
+  pod 'MobilliumBuilders'
 
 end
 
@@ -22,5 +24,7 @@ target 'UIComponents' do
 
   # Pods for BasicNoteApp
   pod 'SwiftGen', '~> 6.1'
+  pod 'TinyConstraints', '~> 4.0'
+  pod 'MobilliumBuilders'
 
 end

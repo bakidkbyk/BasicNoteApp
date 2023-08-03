@@ -19,6 +19,12 @@
 		FA7115132A7A83F7003FF3E4 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7115122A7A83F7003FF3E4 /* Localize.swift */; };
 		FAD638952A7A8BEF00F83932 /* Pods_UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC543CDA9F61AFFAD09560B9 /* Pods_UIComponents.framework */; };
 		FAD638962A7A8BEF00F83932 /* Pods_UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC543CDA9F61AFFAD09560B9 /* Pods_UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAD6389D2A7A97D600F83932 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD638992A7A97D600F83932 /* Nunito-SemiBold.ttf */; };
+		FAD6389F2A7A97D600F83932 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD6389B2A7A97D600F83932 /* Nunito-ExtraBold.ttf */; };
+		FAD638A02A7A97D600F83932 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD6389C2A7A97D600F83932 /* Nunito-Bold.ttf */; };
+		FAD638A22A7A996400F83932 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD638A12A7A996400F83932 /* Fonts.swift */; };
+		FAD638A62A7A9BA200F83932 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD638A52A7A9BA200F83932 /* UIFont+Extensions.swift */; };
+		FAD638A82A7A9BDA00F83932 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD638A72A7A9BDA00F83932 /* FloatLabelTextField.swift */; };
 		FAF94F3F2A7A6E5D0007D010 /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF94F3E2A7A6E5D0007D010 /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -50,6 +56,12 @@
 		FA71150E2A7A8132003FF3E4 /* UIImage+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Images.swift"; sourceTree = "<group>"; };
 		FA7115102A7A8166003FF3E4 /* UIColor+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
 		FA7115122A7A83F7003FF3E4 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		FAD638992A7A97D600F83932 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		FAD6389B2A7A97D600F83932 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FAD6389C2A7A97D600F83932 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		FAD638A12A7A996400F83932 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FAD638A52A7A9BA200F83932 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		FAD638A72A7A9BDA00F83932 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 		FAF94F3B2A7A6E5D0007D010 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF94F3E2A7A6E5D0007D010 /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 		FAF94F522A7A75290007D010 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
@@ -98,6 +110,11 @@
 		FA7114FE2A7A7BFA003FF3E4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				FAD6389C2A7A97D600F83932 /* Nunito-Bold.ttf */,
+				FAD6389B2A7A97D600F83932 /* Nunito-ExtraBold.ttf */,
+				FAD638992A7A97D600F83932 /* Nunito-SemiBold.ttf */,
+				FAD638A12A7A996400F83932 /* Fonts.swift */,
+				FAD638A52A7A9BA200F83932 /* UIFont+Extensions.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -114,6 +131,14 @@
 				FA7115102A7A8166003FF3E4 /* UIColor+Colors.swift */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		FAD638982A7A968500F83932 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				FAD638A72A7A9BDA00F83932 /* FloatLabelTextField.swift */,
+			);
+			path = UITextField;
 			sourceTree = "<group>";
 		};
 		FAF94F312A7A6E5C0007D010 = {
@@ -138,6 +163,7 @@
 		FAF94F3D2A7A6E5D0007D010 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FAD638982A7A968500F83932 /* UITextField */,
 				FAF94F512A7A74BF0007D010 /* Resources */,
 				FAF94F3E2A7A6E5D0007D010 /* UIComponents.h */,
 			);
@@ -227,10 +253,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD638A02A7A97D600F83932 /* Nunito-Bold.ttf in Resources */,
 				FA7115012A7A7F3A003FF3E4 /* Localizable.strings in Resources */,
 				FA71150D2A7A80E5003FF3E4 /* Colors.xcassets in Resources */,
 				FA71150B2A7A80D6003FF3E4 /* Icons.xcassets in Resources */,
+				FAD6389F2A7A97D600F83932 /* Nunito-ExtraBold.ttf in Resources */,
 				FA7115092A7A80C3003FF3E4 /* Images.xcassets in Resources */,
+				FAD6389D2A7A97D600F83932 /* Nunito-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD638A22A7A996400F83932 /* Fonts.swift in Sources */,
 				FA7115132A7A83F7003FF3E4 /* Localize.swift in Sources */,
+				FAD638A62A7A9BA200F83932 /* UIFont+Extensions.swift in Sources */,
 				FA7115052A7A8067003FF3E4 /* Assets.swift in Sources */,
 				FA71150F2A7A8132003FF3E4 /* UIImage+Images.swift in Sources */,
 				FA7115112A7A8166003FF3E4 /* UIColor+Colors.swift in Sources */,
+				FAD638A82A7A9BDA00F83932 /* FloatLabelTextField.swift in Sources */,
 				FA7115032A7A8051003FF3E4 /* UIImage+Icons.swift in Sources */,
 				FA7115072A7A8085003FF3E4 /* StringConstants.swift in Sources */,
 			);
@@ -347,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -404,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

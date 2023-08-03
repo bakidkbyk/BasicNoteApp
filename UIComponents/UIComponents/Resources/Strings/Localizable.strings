@@ -6,4 +6,13 @@
   
 */
 
-"BaseViewController.errorTitle" = "Tekrar Dene";
+// MARK: - Register View Controller
+"Register.signUp" = "Sign Up";
+"Register.signUpSubTitle" = "Login or sign up to continue using our app.";
+"Register.fullName" = "Full Name";
+"Register.email" = "Email Adress";
+"Register.password" = "Password";
+"Register.forgotPassword" = "Forgot Password";
+"Register.signUpButton" = "Sign Up";
+"Register.haveAccount" = "Already have an account?";
+"Register.signInNow" = "Sign in now";
