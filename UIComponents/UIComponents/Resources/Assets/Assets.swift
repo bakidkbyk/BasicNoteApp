@@ -25,14 +25,14 @@ public typealias AssetImageTypeAlias = ImageAsset.Image
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum Asset {
   public enum Colors {
-    public static let actionPrimary = ColorAsset(name: "actionPrimary")
-    public static let actionSecondary = ColorAsset(name: "actionSecondary")
+    public static let actionPrimary = ColorAsset(name: "ActionPrimary")
+    public static let actionSecondary = ColorAsset(name: "ActionSecondary")
+    public static let textPrimary = ColorAsset(name: "TextPrimary")
+    public static let textSecondary = ColorAsset(name: "TextSecondary")
     public static let appBorderColor = ColorAsset(name: "appBorderColor")
     public static let appGreen = ColorAsset(name: "appGreen")
     public static let appRed = ColorAsset(name: "appRed")
     public static let appYellow = ColorAsset(name: "appYellow")
-    public static let textPrimary = ColorAsset(name: "textPrimary")
-    public static let textSecondary = ColorAsset(name: "textSecondary")
   }
   public enum Icons {
     public static let back = ImageAsset(name: "back")
@@ -43,6 +43,8 @@ public enum Asset {
     public static let icTrash = ImageAsset(name: "ic_trash")
   }
   public enum Images {
+    public static let icError = ImageAsset(name: "ic_error")
+    public static let imgUser = ImageAsset(name: "img_user")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
