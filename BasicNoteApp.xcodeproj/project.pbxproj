@@ -20,6 +20,13 @@
 		FAF5FF382A927E1300C6AB8F /* APIRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF372A927E1300C6AB8F /* APIRequestAdapter.swift */; };
 		FAF5FF3A2A927E2A00C6AB8F /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF392A927E2A00C6AB8F /* APILogger.swift */; };
 		FAF5FF3C2A927E4C00C6AB8F /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF3B2A927E4C00C6AB8F /* DataProvider.swift */; };
+		FAF5FF412A92810300C6AB8F /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF402A92810300C6AB8F /* ModalTransition.swift */; };
+		FAF5FF432A92811500C6AB8F /* PlaceOnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF422A92811500C6AB8F /* PlaceOnWindowTransition.swift */; };
+		FAF5FF452A92812B00C6AB8F /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF442A92812B00C6AB8F /* PushTransition.swift */; };
+		FAF5FF472A92813F00C6AB8F /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF462A92813F00C6AB8F /* Transition.swift */; };
+		FAF5FF4A2A92816A00C6AB8F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF492A92816A00C6AB8F /* AppRouter.swift */; };
+		FAF5FF4D2A9281A900C6AB8F /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF4C2A9281A900C6AB8F /* Animator.swift */; };
+		FAF5FF4F2A9281BA00C6AB8F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF4E2A9281BA00C6AB8F /* Router.swift */; };
 		FAF94F4B2A7A6F700007D010 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF94F4A2A7A6F700007D010 /* UIComponents.framework */; };
 		FAF94F4C2A7A6F700007D010 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAF94F4A2A7A6F700007D010 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -56,6 +63,13 @@
 		FAF5FF372A927E1300C6AB8F /* APIRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestAdapter.swift; sourceTree = "<group>"; };
 		FAF5FF392A927E2A00C6AB8F /* APILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
 		FAF5FF3B2A927E4C00C6AB8F /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		FAF5FF402A92810300C6AB8F /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		FAF5FF422A92811500C6AB8F /* PlaceOnWindowTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOnWindowTransition.swift; sourceTree = "<group>"; };
+		FAF5FF442A92812B00C6AB8F /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		FAF5FF462A92813F00C6AB8F /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		FAF5FF492A92816A00C6AB8F /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		FAF5FF4C2A9281A900C6AB8F /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		FAF5FF4E2A9281BA00C6AB8F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FAF94F472A7A6EB90007D010 /* BasicNoteApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicNoteApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		FAF94F4A2A7A6F700007D010 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +130,7 @@
 		FA9BE7B62A79242F00271907 /* BasicNoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAF5FF3E2A9280DC00C6AB8F /* Routing */,
 				FAF5FF3D2A927F4F00C6AB8F /* AppDelegate */,
 				FAF5FF322A927DA400C6AB8F /* DataProvider */,
 				FA9BE7BB2A79242F00271907 /* ViewController.swift */,
@@ -144,6 +159,44 @@
 				FA9BE7B72A79242F00271907 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FAF5FF3E2A9280DC00C6AB8F /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5FF4B2A9281A200C6AB8F /* Core */,
+				FAF5FF482A92814F00C6AB8F /* Routers */,
+				FAF5FF3F2A9280E800C6AB8F /* Transitions */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		FAF5FF3F2A9280E800C6AB8F /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5FF402A92810300C6AB8F /* ModalTransition.swift */,
+				FAF5FF422A92811500C6AB8F /* PlaceOnWindowTransition.swift */,
+				FAF5FF442A92812B00C6AB8F /* PushTransition.swift */,
+				FAF5FF462A92813F00C6AB8F /* Transition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		FAF5FF482A92814F00C6AB8F /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5FF492A92816A00C6AB8F /* AppRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		FAF5FF4B2A9281A200C6AB8F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5FF4C2A9281A900C6AB8F /* Animator.swift */,
+				FAF5FF4E2A9281BA00C6AB8F /* Router.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,10 +335,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF5FF452A92812B00C6AB8F /* PushTransition.swift in Sources */,
+				FAF5FF412A92810300C6AB8F /* ModalTransition.swift in Sources */,
 				FAF5FF3A2A927E2A00C6AB8F /* APILogger.swift in Sources */,
+				FAF5FF432A92811500C6AB8F /* PlaceOnWindowTransition.swift in Sources */,
 				FAF5FF362A927DFC00C6AB8F /* APIRequestInterceptor.swift in Sources */,
+				FAF5FF472A92813F00C6AB8F /* Transition.swift in Sources */,
 				FAF5FF382A927E1300C6AB8F /* APIRequestAdapter.swift in Sources */,
+				FAF5FF4D2A9281A900C6AB8F /* Animator.swift in Sources */,
 				FAF5FF3C2A927E4C00C6AB8F /* DataProvider.swift in Sources */,
+				FAF5FF4A2A92816A00C6AB8F /* AppRouter.swift in Sources */,
+				FAF5FF4F2A9281BA00C6AB8F /* Router.swift in Sources */,
 				FA9BE7BC2A79242F00271907 /* ViewController.swift in Sources */,
 				FA9BE7B82A79242F00271907 /* AppDelegate.swift in Sources */,
 				FAF5FF342A927DBE00C6AB8F /* APIDataProvider.swift in Sources */,
