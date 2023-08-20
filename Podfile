@@ -13,8 +13,20 @@ target 'BasicNoteApp' do
   pod 'SwiftGen', '~> 6.1'
   pod 'TinyConstraints', '~> 4.0'
   pod 'MobilliumBuilders'
+  pod 'Alamofire', '~> 5.3'
+  pod 'KeychainSwift', '~> 19.0'
 
 end
+
+target 'DataProvider' do
+  
+  project 'DataProvider/DataProvider.xcodeproj'
+  
+  #Helper
+  pod 'Alamofire', '~> 5.3'
+  pod 'KeychainSwift', '~> 19.0'
+
+  end
 
 target 'UIComponents' do
   # Comment the next line if you don't want to use dynamic frameworks

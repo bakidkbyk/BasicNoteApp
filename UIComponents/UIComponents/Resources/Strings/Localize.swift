@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 public class Localize {
     
     public static let shared = Localize()
