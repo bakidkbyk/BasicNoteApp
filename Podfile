@@ -15,6 +15,8 @@ target 'BasicNoteApp' do
   pod 'MobilliumBuilders'
   pod 'Alamofire', '~> 5.3'
   pod 'KeychainSwift', '~> 19.0'
+  pod 'SwiftEntryKit', '~> 2.0.0'
+
 
 end
 
@@ -35,8 +37,11 @@ target 'UIComponents' do
   
 
   # Pods for BasicNoteApp
+  pod 'SwiftLint'
   pod 'SwiftGen', '~> 6.1'
   pod 'TinyConstraints', '~> 4.0'
   pod 'MobilliumBuilders'
+  pod 'SwiftEntryKit', '~> 2.0.0'
+
 
 end
