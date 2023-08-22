@@ -6,7 +6,6 @@
 //
 
 import Alamofire
-import KeychainSwift
 
 public class APIRequestInterceptor: RequestInterceptor {
     

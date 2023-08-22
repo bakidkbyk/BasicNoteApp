@@ -5,7 +5,9 @@
 //  Created by Baki Dikbıyık on 2.08.2023.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <MobilliumBuilders/MobilliumBuilders-Swift.h>
+#import <TinyConstraints/TinyConstraints-Swift.h>
 
 //! Project version number for UIComponents.
 FOUNDATION_EXPORT double UIComponentsVersionNumber;

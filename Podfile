@@ -12,7 +12,7 @@ target 'BasicNoteApp' do
   pod 'SwiftLint'
   pod 'SwiftGen', '~> 6.1'
   pod 'TinyConstraints', '~> 4.0'
-  pod 'MobilliumBuilders'
+  pod 'MobilliumBuilders', '~> 1.4'
   pod 'Alamofire', '~> 5.3'
   pod 'KeychainSwift', '~> 19.0'
   pod 'SwiftEntryKit', '~> 2.0.0'
@@ -40,8 +40,20 @@ target 'UIComponents' do
   pod 'SwiftLint'
   pod 'SwiftGen', '~> 6.1'
   pod 'TinyConstraints', '~> 4.0'
-  pod 'MobilliumBuilders'
+  pod 'MobilliumBuilders', '~> 1.4'
   pod 'SwiftEntryKit', '~> 2.0.0'
+
+
+end
+
+target 'Utilities' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  
+  project 'Utilities/Utilities.xcodeproj'
+  
+
+  # Pods for BasicNoteApp
+
 
 
 end

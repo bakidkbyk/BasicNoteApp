@@ -5,8 +5,6 @@
 //  Created by Baki Dikbıyık on 21.08.2023.
 //
 
-import UIKit
-
 final class BlockingActivityIndicator: UIView {
     
     private let activityIndicator: UIActivityIndicatorView

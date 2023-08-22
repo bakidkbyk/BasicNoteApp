@@ -10,7 +10,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.3)
   - KeychainSwift (~> 19.0)
-  - MobilliumBuilders
+  - MobilliumBuilders (~> 1.4)
   - SwiftEntryKit (~> 2.0.0)
   - SwiftGen (~> 6.1)
   - SwiftLint
@@ -35,6 +35,6 @@ SPEC CHECKSUMS:
   SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: 6daaad0dd8d5164d23dffc2e63eac4a31333c186
+PODFILE CHECKSUM: 6d10e1da06fe36dce60cfc39404057c3f279656c
 
 COCOAPODS: 1.11.3

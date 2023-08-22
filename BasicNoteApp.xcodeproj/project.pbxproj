@@ -142,7 +142,6 @@
 				FA9BE7B52A79242F00271907 /* Products */,
 				7253C68030C90CFCCAF96431 /* Pods */,
 				076629EA096F0EC89FB0588D /* Frameworks */,
-				FAF94F472A7A6EB90007D010 /* BasicNoteApp-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				FA9BE7B72A79242F00271907 /* AppDelegate.swift */,
+				FAF94F472A7A6EB90007D010 /* BasicNoteApp-Bridging-Header.h */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -535,7 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = UmitBakiDikbiyik.BasicNoteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "BasicNoteApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicNoteApp/AppDelegate/BasicNoteApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -567,7 +567,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = UmitBakiDikbiyik.BasicNoteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "BasicNoteApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicNoteApp/AppDelegate/BasicNoteApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
