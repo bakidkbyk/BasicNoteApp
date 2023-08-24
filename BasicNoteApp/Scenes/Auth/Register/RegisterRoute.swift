@@ -16,7 +16,7 @@ extension RegisterRoute where Self: RouterProtocol {
         let viewModel = RegisterViewModel(router: router)
         let viewController = RegisterViewController(viewModel: viewModel)
         
-        let transition = ModalTransition()
+        let transition = PlaceOnWindowTransition()
         router.viewController = viewController
         router.openTransition = transition
         
