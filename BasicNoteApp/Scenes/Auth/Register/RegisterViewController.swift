@@ -40,6 +40,8 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
     
     private let registerButton = ButtonFactory.createPrimaryButton(style: .large)
     
+    private let registerButtonView = BottomButtonView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubviews()
@@ -54,11 +56,12 @@ extension RegisterViewController {
     private func addSubviews() {
         addScrollView()
         addContentStackView()
+        addRegisterButtonView()
     }
     
     private func addScrollView() {
         view.addSubview(scrollView)
-        scrollView.edgesToSuperview(usingSafeArea: true)
+        scrollView.edgesToSuperview(excluding: .bottom, usingSafeArea: true)
         
         scrollView.addSubview(contentView)
         contentView.edgesToSuperview()
@@ -66,7 +69,8 @@ extension RegisterViewController {
         
         contentView.addSubview(contentStackView)
         
-        contentStackView.edgesToSuperview(insets: .left(24) + .right(24))
+        contentStackView.edgesToSuperview(excluding: .bottom, insets: .left(24) + .right(24) + .top(52))
+        
     }
     
     private func addContentStackView() {
@@ -74,8 +78,8 @@ extension RegisterViewController {
         titleView.height(65)
         
         contentStackView.addArrangedSubview(textFieldStackView)
-        
         contentStackView.setCustomSpacing(10, after: textFieldStackView)
+        
         textFieldStackView.addArrangedSubview(fullNameTextField)
         fullNameTextField.height(53)
         textFieldStackView.addArrangedSubview(emailTextField)
@@ -84,12 +88,23 @@ extension RegisterViewController {
         passwordTextField.height(53)
         
         contentStackView.addArrangedSubview(forgotpasswordContainerView)
+        contentStackView.setCustomSpacing(24, after: forgotpasswordContainerView)
         
         forgotpasswordContainerView.addSubview(forgotPasswordButton)
         forgotPasswordButton.edgesToSuperview(excluding: .leading)
         
         contentStackView.addArrangedSubview(registerButton)
         registerButton.height(63)
+    }
+    
+    private func addRegisterButtonView() {
+        view.addSubview(registerButtonView)
+        registerButtonView.centerXToSuperview()
+        registerButtonView.topToBottom(of: scrollView).constant = 24
+        registerButtonView.bottomToSuperview(usingSafeArea: true).constant = -4
+        registerButtonView.leadingToSuperview(relation: .equalOrGreater).constant = 24
+        registerButtonView.trailingToSuperview(relation: .equalOrLess).constant = -24
+        
     }
 }
 
@@ -108,6 +123,8 @@ extension RegisterViewController {
         emailTextField.title = L10n.Register.email
         passwordTextField.title = L10n.Register.password
         registerButton.setTitle(L10n.Register.signUpButton, for: .normal)
+        registerButtonView.infoText = L10n.Register.haveAccount
+        registerButtonView.buttonText = L10n.Register.signInNow
     }
 }
 
@@ -137,7 +154,6 @@ extension RegisterViewController {
     func subscribeViewModel() {
         viewModel.registerSuccess = { [weak self] in
             guard let self = self else { return }
-            
         }
     }
 }
