@@ -13,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let bounds = UIScreen.main.bounds
         self.window = UIWindow(frame: bounds)
-        self.window?.rootViewController = ViewController()
-        window?.makeKeyAndVisible()
+        self.window?.makeKeyAndVisible()
+        AppRouter.shared.startApp()
         return true
     }
 
