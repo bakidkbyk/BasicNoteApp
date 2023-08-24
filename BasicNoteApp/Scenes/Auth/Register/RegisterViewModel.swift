@@ -32,6 +32,7 @@ extension RegisterViewModel {
             switch result {
             case .success:
                 self.registerSuccess?()
+                self.showWarningToast?(L10n.Toast.success)
             case .failure:
                 self.showWarningToast?(L10n.Toast.fail)
             }

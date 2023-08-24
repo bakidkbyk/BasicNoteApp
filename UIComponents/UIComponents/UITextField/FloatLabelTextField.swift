@@ -68,7 +68,7 @@ extension FloatLabelTextField {
     private func configureContents() {
         addSubview(titleLabel)
         translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        height(53)
         borderStyle = .none
         layer.borderWidth = 1
         layer.cornerRadius = 5

@@ -20,6 +20,7 @@
 // MARK: - Toast
 "Toast.success" = "Giriş Başarılı";
 "Toast.fail" = "Lütfen Tekrar Deneyiniz";
+"Toast.emptyFullName" = "Lütfen geçerli bir isim giriniz";
 "Toast.emptyEmail" = "Lütfen geçerli bir email adresi giriniz";
 "Toast.emptyPassword" = "Lütfen geçerli bir parola giriniz";
 "Toast.emptyFields" = "Lütfen boş alanları doldurunuz";

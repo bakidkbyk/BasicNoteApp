@@ -5,6 +5,8 @@
 //  Created by Baki Dikbıyık on 22.08.2023.
 //
 
+import UIComponents
+
 final class RegisterViewController: BaseViewController<RegisterViewModel> {
     
     private let scrollView = UIScrollViewBuilder()
@@ -35,7 +37,6 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
     private let forgotPasswordButton = UIButtonBuilder()
         .titleFont(.font(.nunitoBold, size: .xLarge))
         .titleColor(.textPrimary)
-        .title(L10n.Register.forgotPassword)
         .build()
     
     private let registerButton = ButtonFactory.createPrimaryButton(style: .large)
@@ -69,7 +70,7 @@ extension RegisterViewController {
         
         contentView.addSubview(contentStackView)
         
-        contentStackView.edgesToSuperview(excluding: .bottom, insets: .left(24) + .right(24) + .top(52))
+        contentStackView.edgesToSuperview(insets: .left(24) + .right(24) + .top(52))
         
     }
     
@@ -81,12 +82,9 @@ extension RegisterViewController {
         contentStackView.setCustomSpacing(10, after: textFieldStackView)
         
         textFieldStackView.addArrangedSubview(fullNameTextField)
-        fullNameTextField.height(53)
         textFieldStackView.addArrangedSubview(emailTextField)
-        emailTextField.height(53)
         textFieldStackView.addArrangedSubview(passwordTextField)
-        passwordTextField.height(53)
-        
+       
         contentStackView.addArrangedSubview(forgotpasswordContainerView)
         contentStackView.setCustomSpacing(24, after: forgotpasswordContainerView)
         
@@ -122,6 +120,7 @@ extension RegisterViewController {
         fullNameTextField.title = L10n.Register.fullName
         emailTextField.title = L10n.Register.email
         passwordTextField.title = L10n.Register.password
+        forgotPasswordButton.setTitle(L10n.Register.forgotPassword, for: .normal)
         registerButton.setTitle(L10n.Register.signUpButton, for: .normal)
         registerButtonView.infoText = L10n.Register.haveAccount
         registerButtonView.buttonText = L10n.Register.signInNow
@@ -141,6 +140,7 @@ extension RegisterViewController {
         }
         
         let validation = Validation()
+        guard validation.validateFullName(fullName) else { return }
         guard validation.isValidEmail(email) else { return }
         guard validation.isValidPassword(password) else { return }
         

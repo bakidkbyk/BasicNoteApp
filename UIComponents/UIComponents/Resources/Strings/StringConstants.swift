@@ -37,6 +37,8 @@ public enum L10n {
     public static let emptyEmail = L10n.tr("Localizable", "Toast.emptyEmail")
     /// Lütfen boş alanları doldurunuz
     public static let emptyFields = L10n.tr("Localizable", "Toast.emptyFields")
+    /// Lütfen geçerli bir isim giriniz
+    public static let emptyFullName = L10n.tr("Localizable", "Toast.emptyFullName")
     /// Lütfen geçerli bir parola giriniz
     public static let emptyPassword = L10n.tr("Localizable", "Toast.emptyPassword")
     /// Lütfen Tekrar Deneyiniz
