@@ -5,7 +5,8 @@
 //  Created by Baki Dikbıyık on 4.08.2023.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 
 //! Project version number for DataProvider.
 FOUNDATION_EXPORT double DataProviderVersionNumber;

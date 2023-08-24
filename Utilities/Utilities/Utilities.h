@@ -5,7 +5,7 @@
 //  Created by Baki Dikbıyık on 21.08.2023.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for Utilities.
 FOUNDATION_EXPORT double UtilitiesVersionNumber;

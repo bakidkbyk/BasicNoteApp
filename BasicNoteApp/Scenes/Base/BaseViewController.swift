@@ -5,8 +5,6 @@
 //  Created by Baki Dikbıyık on 21.08.2023.
 //
 
-import UIKit
-
 class BaseViewController<V: BaseViewModeProtocol>: UIViewController, BaseViewController.LoadingProtocols {
     
     typealias LoadingProtocols = LoadingProtocol & ActivityIndicatorProtocol

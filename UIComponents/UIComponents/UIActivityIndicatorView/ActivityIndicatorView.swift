@@ -5,8 +5,6 @@
 //  Created by Baki Dikbıyık on 21.08.2023.
 //
 
-import UIKit
-
 public class ActivityIndicatorView: UIActivityIndicatorView {
     
     override init(frame: CGRect) {

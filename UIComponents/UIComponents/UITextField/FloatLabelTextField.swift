@@ -5,9 +5,6 @@
 //  Created by Baki Dikbıyık on 2.08.2023.
 //
 
-import UIKit
-import MobilliumBuilders
-
 public class FloatLabelTextField: UITextField {
     
     private let titleLabel = UILabelBuilder()
@@ -16,14 +13,14 @@ public class FloatLabelTextField: UITextField {
         .build()
     
     private var insets: UIEdgeInsets {
-        var insets = UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
+        var insets = UIEdgeInsets(top: 10, left: 18, bottom: 0, right: 18)
         if let leftView = leftView {
             insets.left = leftView.frame.width + 10
         }
         return insets
     }
     
-    private var title: String? {
+    public var title: String? {
         willSet {
             placeholder = nil
             attributedPlaceholder = nil
@@ -71,10 +68,10 @@ extension FloatLabelTextField {
     private func configureContents() {
         addSubview(titleLabel)
         translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        height(53)
         borderStyle = .none
-        layer.borderWidth = 2
-        layer.cornerRadius = 4
+        layer.borderWidth = 1
+        layer.cornerRadius = 5
     }
     
     private func setTitlePosition() {
@@ -94,7 +91,7 @@ extension FloatLabelTextField {
         let contentHeight = frame.size.height
         let titleHeight = titleLabel.frame.size.height
         titleLabel.font = .font(.nunitoSemiBold, size: .large)
-        titleLabel.textColor = .appBorderColor
+        titleLabel.textColor = .textSecondary
         titleLabel.frame.origin.y = (contentHeight / 2) - (titleHeight / 2 )
     }
     

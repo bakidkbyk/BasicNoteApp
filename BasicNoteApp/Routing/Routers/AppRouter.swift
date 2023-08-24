@@ -7,12 +7,14 @@
 
 import UIKit
 
-final class AppRouter: Router {
+final class AppRouter: Router, AppRouter.Routes {
+    
+    typealias Routes = RegisterRoute
     
     static let shared = AppRouter()
     
     func startApp() {
-
+        presentRegister()
     }
 
     private func topViewController() -> UIViewController? {
