@@ -9,7 +9,7 @@ public class Validation {
     
     func validateFullName(_ fullName: String) -> Bool {
         guard fullName.count > 5, fullName.count < 255 else {
-            ToastPresenter.showWarningToast(text: L10n.Toast.emptyFullName)
+            ToastPresenter.showWarningToast(text: L10n.Toast.emptyFullName, type: .fail)
             return false
         }
         return true
@@ -20,7 +20,7 @@ public class Validation {
         let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
         
         guard emailPred.evaluate(with: email) else {
-            ToastPresenter.showWarningToast(text: "Lütfen geçerli bir email adresi giriniz.")
+            ToastPresenter.showWarningToast(text: "Lütfen geçerli bir email adresi giriniz.", type: .fail)
             return false
         }
         return true
@@ -28,7 +28,7 @@ public class Validation {
     
     func isValidPassword(_ password: String) -> Bool {
         guard password.count > 5 else {
-            ToastPresenter.showWarningToast(text: "Şifreniz en az 6 karaterden oluşmalıdır.")
+            ToastPresenter.showWarningToast(text: "Şifreniz en az 6 karaterden oluşmalıdır.", type: .fail)
             return false
         }
         return true

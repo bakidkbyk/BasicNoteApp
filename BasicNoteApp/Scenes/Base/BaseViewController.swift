@@ -16,6 +16,13 @@ class BaseViewController<V: BaseViewModeProtocol>: UIViewController, BaseViewCon
         super.init(nibName: nil, bundle: nil)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        subscribeActivityIndicator()
+        subscribeLoading()
+        subscribeToast()
+    }
+    
     // swiftlint:disable fatal_error unavailable_function
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -42,11 +49,11 @@ class BaseViewController<V: BaseViewModeProtocol>: UIViewController, BaseViewCon
     
     private func subscribeToast() {
         viewModel.showWarningToast = { text in
-            ToastPresenter.showWarningToast(text: text)
+            ToastPresenter.showWarningToast(text: text, type: .fail)
         }
     }
     
-    func showWarningToast(message: String) {
-        ToastPresenter.showWarningToast(text: message)
+    func showWarningToast(message: String, type: Type) {
+        ToastPresenter.showWarningToast(text: message, type: type)
     }
 }

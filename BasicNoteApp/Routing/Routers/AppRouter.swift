@@ -9,12 +9,12 @@ import UIKit
 
 final class AppRouter: Router, AppRouter.Routes {
     
-    typealias Routes = RegisterRoute
+    typealias Routes = LoginRoute
     
     static let shared = AppRouter()
     
     func startApp() {
-        presentRegister()
+        presentLogin()
     }
 
     private func topViewController() -> UIViewController? {
