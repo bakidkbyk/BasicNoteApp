@@ -23,6 +23,10 @@
 		FA9BE7C42A79243100271907 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9BE7C22A79243100271907 /* LaunchScreen.storyboard */; };
 		FA9BE7CC2A7925FC00271907 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA9BE7CB2A7925FC00271907 /* .swiftlint.yml */; };
 		FAA4A5B42A9671F6003233F1 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5B32A9671F6003233F1 /* Validation.swift */; };
+		FAA4A5C32A97C0BE003233F1 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5C02A97C0BE003233F1 /* LoginRouter.swift */; };
+		FAA4A5C42A97C0BE003233F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5C12A97C0BE003233F1 /* LoginViewController.swift */; };
+		FAA4A5C52A97C0BE003233F1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5C22A97C0BE003233F1 /* LoginViewModel.swift */; };
+		FAA4A5C72A97C0CB003233F1 /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5C62A97C0CB003233F1 /* LoginRoute.swift */; };
 		FAF5FF342A927DBE00C6AB8F /* APIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF332A927DBE00C6AB8F /* APIDataProvider.swift */; };
 		FAF5FF362A927DFC00C6AB8F /* APIRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF352A927DFC00C6AB8F /* APIRequestInterceptor.swift */; };
 		FAF5FF382A927E1300C6AB8F /* APIRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF372A927E1300C6AB8F /* APIRequestAdapter.swift */; };
@@ -74,6 +78,10 @@
 		FA9BE7C52A79243100271907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9BE7CB2A7925FC00271907 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		FAA4A5B32A9671F6003233F1 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		FAA4A5C02A97C0BE003233F1 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		FAA4A5C12A97C0BE003233F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FAA4A5C22A97C0BE003233F1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FAA4A5C62A97C0CB003233F1 /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
 		FAF5FF332A927DBE00C6AB8F /* APIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataProvider.swift; sourceTree = "<group>"; };
 		FAF5FF352A927DFC00C6AB8F /* APIRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestInterceptor.swift; sourceTree = "<group>"; };
 		FAF5FF372A927E1300C6AB8F /* APIRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestAdapter.swift; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 		FA131BE32A94C36400315746 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				FAA4A5BF2A97C05A003233F1 /* Login */,
 				FA131BE42A94C36B00315746 /* Register */,
 			);
 			path = Auth;
@@ -202,6 +211,17 @@
 				FAA4A5B32A9671F6003233F1 /* Validation.swift */,
 			);
 			path = Validation;
+			sourceTree = "<group>";
+		};
+		FAA4A5BF2A97C05A003233F1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4A5C12A97C0BE003233F1 /* LoginViewController.swift */,
+				FAA4A5C22A97C0BE003233F1 /* LoginViewModel.swift */,
+				FAA4A5C02A97C0BE003233F1 /* LoginRouter.swift */,
+				FAA4A5C62A97C0CB003233F1 /* LoginRoute.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		FAF5FF322A927DA400C6AB8F /* DataProvider */ = {
@@ -399,15 +419,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA4A5C52A97C0BE003233F1 /* LoginViewModel.swift in Sources */,
 				FAF5FF452A92812B00C6AB8F /* PushTransition.swift in Sources */,
 				FAF5FF412A92810300C6AB8F /* ModalTransition.swift in Sources */,
 				FAF5FF3A2A927E2A00C6AB8F /* APILogger.swift in Sources */,
 				FA131BF32A94CBD900315746 /* RegisterRoute.swift in Sources */,
 				FAF5FF432A92811500C6AB8F /* PlaceOnWindowTransition.swift in Sources */,
+				FAA4A5C32A97C0BE003233F1 /* LoginRouter.swift in Sources */,
 				FA361A582A93266C00F8C08D /* BaseViewController.swift in Sources */,
 				FA131BE82A94C39200315746 /* RegisterRouter.swift in Sources */,
 				FA361A5A2A93267D00F8C08D /* BaseViewModel.swift in Sources */,
 				FA131BEA2A94C39200315746 /* RegisterViewModel.swift in Sources */,
+				FAA4A5C72A97C0CB003233F1 /* LoginRoute.swift in Sources */,
+				FAA4A5C42A97C0BE003233F1 /* LoginViewController.swift in Sources */,
 				FAF5FF362A927DFC00C6AB8F /* APIRequestInterceptor.swift in Sources */,
 				FAF5FF472A92813F00C6AB8F /* Transition.swift in Sources */,
 				FAF5FF382A927E1300C6AB8F /* APIRequestAdapter.swift in Sources */,
@@ -557,6 +581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6KBC8FTKD3;
@@ -589,6 +614,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6KBC8FTKD3;
