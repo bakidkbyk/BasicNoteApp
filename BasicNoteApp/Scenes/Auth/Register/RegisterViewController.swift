@@ -123,8 +123,7 @@ extension RegisterViewController {
     
     private func configureContents() {
         view.backgroundColor = .white
-        registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
-        
+       
         fullNameTextField.autocorrectionType = .no
         fullNameTextField.autocapitalizationType = .none
         
@@ -134,6 +133,10 @@ extension RegisterViewController {
         
         passwordTextField.autocorrectionType = .no
         passwordTextField.isSecureTextEntry = true
+        
+        forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonClicked), for: .touchUpInside)
+        
+        registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
         
     }
     
@@ -152,6 +155,11 @@ extension RegisterViewController {
 
 // MARK: - Actions
 extension RegisterViewController {
+    
+    @objc
+    func forgotPasswordButtonClicked() {
+        viewModel.showForgotPassword()
+    }
     
     @objc
     func registerButtonTapped() {

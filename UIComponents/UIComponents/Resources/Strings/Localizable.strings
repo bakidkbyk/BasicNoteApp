@@ -13,6 +13,7 @@
 "Toast.emptyEmail" = "Lütfen geçerli bir email adresi giriniz";
 "Toast.emptyPassword" = "Lütfen geçerli bir parola giriniz";
 "Toast.emptyFields" = "Lütfen boş alanları doldurunuz";
+"Toast.forgotPasswordRequestSuccess" = "Şifre yenileme isteğiniz başarılı bir şekilde yollanmıştır";
 
 // MARK: - Register
 "Register.signUp" = "Sign Up";
@@ -35,3 +36,9 @@
 "Login.newUser" = "New user?";
 "Login.signUp" = "Sign Up Now";
 
+// MARK: - Forgot Password
+"Forgot.title" = "Forgot Password?";
+"Forgot.subTitle" = "Confirm your email and we’llsend
+the instructions.";
+"Forgot.email" = "Email Adress";
+"Forgot.registerButton" = "Reset Password";

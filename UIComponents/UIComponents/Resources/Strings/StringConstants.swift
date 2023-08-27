@@ -11,6 +11,17 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
 
+  public enum Forgot {
+    /// Email Adress
+    public static let email = L10n.tr("Localizable", "Forgot.email")
+    /// Reset Password
+    public static let registerButton = L10n.tr("Localizable", "Forgot.registerButton")
+    /// Confirm your email and we’llsend\nthe instructions.
+    public static let subTitle = L10n.tr("Localizable", "Forgot.subTitle")
+    /// Forgot Password?
+    public static let title = L10n.tr("Localizable", "Forgot.title")
+  }
+
   public enum Login {
     /// Email Adress
     public static let email = L10n.tr("Localizable", "Login.email")
@@ -62,6 +73,8 @@ public enum L10n {
     public static let emptyPassword = L10n.tr("Localizable", "Toast.emptyPassword")
     /// Lütfen Tekrar Deneyiniz
     public static let fail = L10n.tr("Localizable", "Toast.fail")
+    /// Şifre yenileme isteğiniz başarılı bir şekilde yollanmıştır
+    public static let forgotPasswordRequestSuccess = L10n.tr("Localizable", "Toast.forgotPasswordRequestSuccess")
     /// Giriş Başarılı
     public static let success = L10n.tr("Localizable", "Toast.success")
   }

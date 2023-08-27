@@ -6,8 +6,8 @@
 //
 
 public struct Data: Decodable {
-    public let accessToken: String
-    public let tokenType: String
+    public let accessToken: String?
+    public let tokenType: String?
     
     enum CodingKeys: String, CodingKey {
         case accessToken = "access_token"

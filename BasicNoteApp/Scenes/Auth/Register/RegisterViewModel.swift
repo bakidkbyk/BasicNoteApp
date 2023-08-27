@@ -23,6 +23,10 @@ final class RegisterViewModel: BaseViewModel<RegisterRouter>, RegisterViewProtoc
         router.close()
     }
     
+    func showForgotPassword() {
+        router.pushForgotPassword()
+    }
+    
     var registerSuccess: VoidClosure?
 }
 

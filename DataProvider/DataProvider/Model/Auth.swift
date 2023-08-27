@@ -6,7 +6,7 @@
 //
 
 public struct Auth: Decodable {
-    public let code: String
-    public let data: Data
-    public let message: String
+    public let code: String?
+    public let data: Data?
+    public let message: String?
 }

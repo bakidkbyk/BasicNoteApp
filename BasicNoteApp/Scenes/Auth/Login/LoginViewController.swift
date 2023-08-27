@@ -121,6 +121,8 @@ extension LoginViewController {
         passwordTextField.autocorrectionType = .no
         passwordTextField.isSecureTextEntry = true
         
+        forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonTapped), for: .touchUpInside)
+        
         registerButton.addTarget(self, action: #selector(registerButtonAction), for: .touchUpInside)
     }
     
@@ -138,6 +140,11 @@ extension LoginViewController {
 
 // MARK: - Actions
 extension LoginViewController {
+    
+    @objc
+    func forgotPasswordButtonTapped() {
+        viewModel.showForgotPassword()
+    }
     
     @objc
     func registerButtonAction() {

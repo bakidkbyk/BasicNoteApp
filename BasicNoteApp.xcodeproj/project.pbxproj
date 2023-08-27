@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		257851A856470F6BEE84D69F /* Pods_BasicNoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C554BC63D47F1CB10208CD /* Pods_BasicNoteApp.framework */; };
+		FA0E592E2A9A72DB00091C7B /* ForgotPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E592B2A9A72DB00091C7B /* ForgotPasswordRouter.swift */; };
+		FA0E592F2A9A72DB00091C7B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E592C2A9A72DB00091C7B /* ForgotPasswordViewController.swift */; };
+		FA0E59302A9A72DB00091C7B /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E592D2A9A72DB00091C7B /* ForgotPasswordViewModel.swift */; };
+		FA0E59322A9A72EF00091C7B /* ForgotPasswordRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E59312A9A72EF00091C7B /* ForgotPasswordRoute.swift */; };
 		FA131BE82A94C39200315746 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA131BE52A94C39200315746 /* RegisterRouter.swift */; };
 		FA131BE92A94C39200315746 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA131BE62A94C39200315746 /* RegisterViewController.swift */; };
 		FA131BEA2A94C39200315746 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA131BE72A94C39200315746 /* RegisterViewModel.swift */; };
@@ -63,6 +67,10 @@
 		46C554BC63D47F1CB10208CD /* Pods_BasicNoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicNoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4278D6FDF8C1D5F12AEB22 /* Pods-BasicNoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicNoteApp.release.xcconfig"; path = "Target Support Files/Pods-BasicNoteApp/Pods-BasicNoteApp.release.xcconfig"; sourceTree = "<group>"; };
 		E385A1D8CFCE14FBACB58BF8 /* Pods-BasicNoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicNoteApp.debug.xcconfig"; path = "Target Support Files/Pods-BasicNoteApp/Pods-BasicNoteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0E592B2A9A72DB00091C7B /* ForgotPasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRouter.swift; sourceTree = "<group>"; };
+		FA0E592C2A9A72DB00091C7B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		FA0E592D2A9A72DB00091C7B /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		FA0E59312A9A72EF00091C7B /* ForgotPasswordRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRoute.swift; sourceTree = "<group>"; };
 		FA131BE52A94C39200315746 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		FA131BE62A94C39200315746 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FA131BE72A94C39200315746 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -133,11 +141,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FA0E592A2A9A72BB00091C7B /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				FA0E592C2A9A72DB00091C7B /* ForgotPasswordViewController.swift */,
+				FA0E592D2A9A72DB00091C7B /* ForgotPasswordViewModel.swift */,
+				FA0E592B2A9A72DB00091C7B /* ForgotPasswordRouter.swift */,
+				FA0E59312A9A72EF00091C7B /* ForgotPasswordRoute.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
 		FA131BE32A94C36400315746 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				FAA4A5BF2A97C05A003233F1 /* Login */,
 				FA131BE42A94C36B00315746 /* Register */,
+				FA0E592A2A9A72BB00091C7B /* ForgotPassword */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -429,16 +449,20 @@
 				FA361A582A93266C00F8C08D /* BaseViewController.swift in Sources */,
 				FA131BE82A94C39200315746 /* RegisterRouter.swift in Sources */,
 				FA361A5A2A93267D00F8C08D /* BaseViewModel.swift in Sources */,
+				FA0E592F2A9A72DB00091C7B /* ForgotPasswordViewController.swift in Sources */,
 				FA131BEA2A94C39200315746 /* RegisterViewModel.swift in Sources */,
 				FAA4A5C72A97C0CB003233F1 /* LoginRoute.swift in Sources */,
 				FAA4A5C42A97C0BE003233F1 /* LoginViewController.swift in Sources */,
 				FAF5FF362A927DFC00C6AB8F /* APIRequestInterceptor.swift in Sources */,
+				FA0E59302A9A72DB00091C7B /* ForgotPasswordViewModel.swift in Sources */,
 				FAF5FF472A92813F00C6AB8F /* Transition.swift in Sources */,
 				FAF5FF382A927E1300C6AB8F /* APIRequestAdapter.swift in Sources */,
 				FAF5FF4D2A9281A900C6AB8F /* Animator.swift in Sources */,
+				FA0E592E2A9A72DB00091C7B /* ForgotPasswordRouter.swift in Sources */,
 				FAF5FF3C2A927E4C00C6AB8F /* DataProvider.swift in Sources */,
 				FAF5FF4A2A92816A00C6AB8F /* AppRouter.swift in Sources */,
 				FA131BE92A94C39200315746 /* RegisterViewController.swift in Sources */,
+				FA0E59322A9A72EF00091C7B /* ForgotPasswordRoute.swift in Sources */,
 				FAF5FF4F2A9281BA00C6AB8F /* Router.swift in Sources */,
 				FA9BE7B82A79242F00271907 /* AppDelegate.swift in Sources */,
 				FAA4A5B42A9671F6003233F1 /* Validation.swift in Sources */,

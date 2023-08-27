@@ -20,6 +20,10 @@ final class LoginViewModel: BaseViewModel<LoginRouter>, LoginViewProtocol {
     var loginClosure: VoidClosure?
     var keychainSwift = KeychainSwift()
     
+    func showForgotPassword() {
+        router.pushForgotPassword()
+    }
+    
     func showRegister() {
         router.pushRegister()
     }
@@ -40,7 +44,7 @@ extension LoginViewModel {
             self.hideLoading?()
             switch result {
             case .success(let response):
-                self.keychainSwift.set(response.data.accessToken, forKey: Keychain.token)
+                self.keychainSwift.set(response.data?.accessToken ?? "", forKey: Keychain.token)
                 self.showWarningToast?(L10n.Toast.success)
                 self.loginClosure?()
             case .failure(let error):

@@ -11,6 +11,7 @@
 		FA0E59222A9A472100091C7B /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E59212A9A472100091C7B /* LoginRequest.swift */; };
 		FA0E59252A9A624100091C7B /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E59242A9A624100091C7B /* Auth.swift */; };
 		FA0E59272A9A637500091C7B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E59262A9A637500091C7B /* Data.swift */; };
+		FA0E59292A9A720600091C7B /* ForgotPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E59282A9A720600091C7B /* ForgotPasswordRequest.swift */; };
 		FA27325A2A7D81B400B3A5F1 /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = FA2732592A7D81B400B3A5F1 /* DataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA2732682A7D829C00B3A5F1 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2732672A7D829C00B3A5F1 /* Typealias.swift */; };
 		FA27326A2A7D82AF00B3A5F1 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2732692A7D82AF00B3A5F1 /* RequestProtocol.swift */; };
@@ -30,6 +31,7 @@
 		FA0E59212A9A472100091C7B /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		FA0E59242A9A624100091C7B /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		FA0E59262A9A637500091C7B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		FA0E59282A9A720600091C7B /* ForgotPasswordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRequest.swift; sourceTree = "<group>"; };
 		FA2732562A7D81B400B3A5F1 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2732592A7D81B400B3A5F1 /* DataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
 		FA2732672A7D829C00B3A5F1 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				FAA4A5BB2A9677D6003233F1 /* RegisterRequest.swift */,
 				FA0E59212A9A472100091C7B /* LoginRequest.swift */,
+				FA0E59282A9A720600091C7B /* ForgotPasswordRequest.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				FA2732702A7D833500B3A5F1 /* RequestMethod.swift in Sources */,
 				FA2732742A7D835700B3A5F1 /* DataProviderResult.swift in Sources */,
 				FA0E59252A9A624100091C7B /* Auth.swift in Sources */,
+				FA0E59292A9A720600091C7B /* ForgotPasswordRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
