@@ -65,7 +65,7 @@ extension ForgotPasswordViewController {
     
     private func addContentStackView() {
         contentStackView.addArrangedSubview(titleView)
-        titleView.height(83)
+    
         
         contentStackView.addArrangedSubview(emailTextField)
         contentStackView.setCustomSpacing(24, after: emailTextField)
