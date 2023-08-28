@@ -164,7 +164,7 @@ extension RegisterViewController {
         guard let fullName = fullNameTextField.text,
               let email = emailTextField.text,
               let password = passwordTextField.text else {
-            self.showWarningToast(message: L10n.Toast.emptyFields, type: .fail)
+            self.showWarningToast(message: L10n.Toast.emptyFields)
             return
         }
         
