@@ -9,8 +9,8 @@ public struct ForgotPasswordRequest: APIDecodableResponseRequest {
     
     public typealias ResponseType = Auth
     
-    public var path: String = "auth/forgot-password"
-    public var method: RequestMethod = .post
+    public let path: String = "auth/forgot-password"
+    public let method: RequestMethod = .post
     public var parameters: RequestParameters = [:]
     
     public init(email: String) {
