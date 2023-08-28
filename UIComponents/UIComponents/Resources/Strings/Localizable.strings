@@ -6,17 +6,6 @@
   
 */
 
-// MARK: - Register View Controller
-"Register.signUp" = "Sign Up";
-"Register.signUpSubTitle" = "Login or sign up to continue using our app.";
-"Register.fullName" = "Full Name";
-"Register.email" = "Email Adress";
-"Register.password" = "Password";
-"Register.forgotPassword" = "Forgot Password";
-"Register.signUpButton" = "Sign Up";
-"Register.haveAccount" = "Already have an account?";
-"Register.signInNow" = "Sign in now";
-
 // MARK: - Toast
 "Toast.success" = "Giriş Başarılı";
 "Toast.fail" = "Lütfen Tekrar Deneyiniz";
@@ -24,3 +13,32 @@
 "Toast.emptyEmail" = "Lütfen geçerli bir email adresi giriniz";
 "Toast.emptyPassword" = "Lütfen geçerli bir parola giriniz";
 "Toast.emptyFields" = "Lütfen boş alanları doldurunuz";
+"Toast.forgotPasswordRequestSuccess" = "Şifre yenileme isteğiniz başarılı bir şekilde yollanmıştır";
+
+// MARK: - Register
+"Register.signUp" = "Sign Up";
+"Register.signUpSubTitle" = "Login or sign up to continue using our app.";
+"Register.fullName" = "Full Name";
+"Register.email" = "Email Adress";
+"Register.password" = "Password";
+"Register.forgotPassword" = "Forgot Password?";
+"Register.signUpButton" = "Sign Up";
+"Register.haveAccount" = "Already have an account?";
+"Register.signInNow" = "Sign in now";
+
+// MARK: - Login
+"Login.title" = "Login";
+"Login.subTitle" = "Login or sign up to continue using our app.";
+"Login.email" = "Email Adress";
+"Login.password" = "Password";
+"Login.forgotPassword" = "Forgot Password?";
+"Login.registerButton" = "Login";
+"Login.newUser" = "New user?";
+"Login.signUp" = "Sign Up Now";
+
+// MARK: - Forgot Password
+"Forgot.title" = "Forgot Password?";
+"Forgot.subTitle" = "Confirm your email and we’llsend
+the instructions.";
+"Forgot.email" = "Email Adress";
+"Forgot.registerButton" = "Reset Password";

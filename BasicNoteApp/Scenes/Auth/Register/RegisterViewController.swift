@@ -35,7 +35,7 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
         .build()
     
     private let forgotPasswordButton = UIButtonBuilder()
-        .titleFont(.font(.nunitoBold, size: .xLarge))
+        .titleFont(.font(.nunitoSemiBold, size: .xLarge))
         .titleColor(.textPrimary)
         .build()
     
@@ -43,12 +43,25 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
     
     private let registerButtonView = BottomButtonView()
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubviews()
         configureContents()
         setLocalize()
+        subscribeViewModel()
+        actionButtonTapped()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
+         navigationItem.setHidesBackButton(true, animated: false)
+     }
+     
+     override func viewDidDisappear(_ animated: Bool) {
+         super.viewDidDisappear(animated)
+         navigationItem.setHidesBackButton(true, animated: false)
+     }
 }
 
 // MARK: - UILayout
@@ -102,7 +115,6 @@ extension RegisterViewController {
         registerButtonView.bottomToSuperview(usingSafeArea: true).constant = -4
         registerButtonView.leadingToSuperview(relation: .equalOrGreater).constant = 24
         registerButtonView.trailingToSuperview(relation: .equalOrLess).constant = -24
-        
     }
 }
 
@@ -111,6 +123,18 @@ extension RegisterViewController {
     
     private func configureContents() {
         view.backgroundColor = .white
+       
+        fullNameTextField.autocorrectionType = .no
+        fullNameTextField.autocapitalizationType = .none
+        
+        emailTextField.autocorrectionType = .no
+        emailTextField.autocapitalizationType = .none
+        emailTextField.keyboardType = .emailAddress
+        
+        passwordTextField.autocorrectionType = .no
+        passwordTextField.isSecureTextEntry = true
+        
+        forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonClicked), for: .touchUpInside)
         registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
     }
     
@@ -131,6 +155,11 @@ extension RegisterViewController {
 extension RegisterViewController {
     
     @objc
+    func forgotPasswordButtonClicked() {
+        viewModel.showForgotPassword()
+    }
+    
+    @objc
     func registerButtonTapped() {
         guard let fullName = fullNameTextField.text,
               let email = emailTextField.text,
@@ -146,6 +175,13 @@ extension RegisterViewController {
         
         viewModel.sendRegisterRequest(fullName: fullName, email: email, password: password)
     }
+    
+    func actionButtonTapped() {
+        registerButtonView.bottomButtonTapped = { [weak self] in
+            guard let self = self else { return }
+            self.viewModel.showLogin()
+        }
+    }
 }
 
 // MARK: Subscribe View Model
@@ -154,6 +190,7 @@ extension RegisterViewController {
     func subscribeViewModel() {
         viewModel.registerSuccess = { [weak self] in
             guard let self = self else { return }
+            self.viewModel.showLogin()
         }
     }
 }

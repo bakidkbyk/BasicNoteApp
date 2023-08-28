@@ -11,10 +11,40 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
 
+  public enum Forgot {
+    /// Email Adress
+    public static let email = L10n.tr("Localizable", "Forgot.email")
+    /// Reset Password
+    public static let registerButton = L10n.tr("Localizable", "Forgot.registerButton")
+    /// Confirm your email and we’llsend\nthe instructions.
+    public static let subTitle = L10n.tr("Localizable", "Forgot.subTitle")
+    /// Forgot Password?
+    public static let title = L10n.tr("Localizable", "Forgot.title")
+  }
+
+  public enum Login {
+    /// Email Adress
+    public static let email = L10n.tr("Localizable", "Login.email")
+    /// Forgot Password?
+    public static let forgotPassword = L10n.tr("Localizable", "Login.forgotPassword")
+    /// New user?
+    public static let newUser = L10n.tr("Localizable", "Login.newUser")
+    /// Password
+    public static let password = L10n.tr("Localizable", "Login.password")
+    /// Login
+    public static let registerButton = L10n.tr("Localizable", "Login.registerButton")
+    /// Sign Up Now
+    public static let signUp = L10n.tr("Localizable", "Login.signUp")
+    /// Login or sign up to continue using our app.
+    public static let subTitle = L10n.tr("Localizable", "Login.subTitle")
+    /// Login
+    public static let title = L10n.tr("Localizable", "Login.title")
+  }
+
   public enum Register {
     /// Email Adress
     public static let email = L10n.tr("Localizable", "Register.email")
-    /// Forgot Password
+    /// Forgot Password?
     public static let forgotPassword = L10n.tr("Localizable", "Register.forgotPassword")
     /// Full Name
     public static let fullName = L10n.tr("Localizable", "Register.fullName")
@@ -43,6 +73,8 @@ public enum L10n {
     public static let emptyPassword = L10n.tr("Localizable", "Toast.emptyPassword")
     /// Lütfen Tekrar Deneyiniz
     public static let fail = L10n.tr("Localizable", "Toast.fail")
+    /// Şifre yenileme isteğiniz başarılı bir şekilde yollanmıştır
+    public static let forgotPasswordRequestSuccess = L10n.tr("Localizable", "Toast.forgotPasswordRequestSuccess")
     /// Giriş Başarılı
     public static let success = L10n.tr("Localizable", "Toast.success")
   }

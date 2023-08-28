@@ -5,6 +5,8 @@
 //  Created by Baki Dikbıyık on 24.08.2023.
 //
 
+import Utilities
+
 public class BottomButtonView: UIView {
     
     private let stackView = UIStackViewBuilder()
@@ -22,14 +24,18 @@ public class BottomButtonView: UIView {
         .titleFont(.font(.nunitoBold, size: .xLarge))
         .build()
     
+    public var bottomButtonTapped: VoidClosure?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubViews()
+        configureContens()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         addSubViews()
+        configureContens()
     }
     
     public var infoText: String? {
@@ -43,6 +49,7 @@ public class BottomButtonView: UIView {
             registerButton.setTitle(buttonText, for: .normal)
         }
     }
+    
 }
 
 // MARK: - AddSubviews
@@ -53,5 +60,22 @@ extension BottomButtonView {
         stackView.edgesToSuperview()
         stackView.addArrangedSubview(infoLabel)
         stackView.addArrangedSubview(registerButton)
+    }
+}
+
+// MARK: - Configure Contents
+extension BottomButtonView {
+    
+    private func configureContens() {
+        registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
+    }
+}
+
+// MARK: - Actions
+extension BottomButtonView {
+    
+    @objc
+    func registerButtonTapped() {
+        self.bottomButtonTapped?()
     }
 }

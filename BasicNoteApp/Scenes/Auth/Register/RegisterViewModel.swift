@@ -13,9 +13,19 @@ protocol RegisterViewEventSource {
     var registerSuccess: VoidClosure? { get set }
 }
 
-protocol RegisterViewProtocol: RegisterViewDataSource, RegisterViewEventSource {}
+protocol RegisterViewProtocol: RegisterViewDataSource, RegisterViewEventSource {
+    func showLogin()
+}
 
 final class RegisterViewModel: BaseViewModel<RegisterRouter>, RegisterViewProtocol {
+    
+    func showLogin() {
+        router.close()
+    }
+    
+    func showForgotPassword() {
+        router.pushForgotPassword()
+    }
     
     var registerSuccess: VoidClosure?
 }
@@ -32,9 +42,9 @@ extension RegisterViewModel {
             switch result {
             case .success:
                 self.registerSuccess?()
-                self.showWarningToast?(L10n.Toast.success)
-            case .failure:
-                self.showWarningToast?(L10n.Toast.fail)
+                self.showSuccessToast?(L10n.Toast.success)
+            case .failure(let error):
+                self.showWarningToast?(error.localizedDescription)
             }
         }
     }
