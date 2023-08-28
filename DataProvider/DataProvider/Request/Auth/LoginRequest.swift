@@ -17,5 +17,4 @@ public struct LoginRequest: APIDecodableResponseRequest {
         parameters["email"] = email
         parameters["password"] = password
     }
-    
 }

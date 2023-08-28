@@ -16,5 +16,4 @@ public struct ForgotPasswordRequest: APIDecodableResponseRequest {
     public init(email: String) {
         parameters["email"] = email
     }
-    
 }

@@ -5,10 +5,6 @@
 //  Created by Baki Dikbıyık on 24.08.2023.
 //
 
-import UIKit
-import MobilliumBuilders
-import UIComponents
-
 final class LoginViewController: BaseViewController<LoginViewModel> {
     
     private let scrollView = UIScrollViewBuilder()
@@ -52,7 +48,6 @@ final class LoginViewController: BaseViewController<LoginViewModel> {
         actionButtonTapped()
         subscribeViewModel()
     }
-    
 }
 
 // MARK: - UILayout

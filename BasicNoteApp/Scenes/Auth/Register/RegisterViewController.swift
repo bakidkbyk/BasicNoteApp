@@ -135,9 +135,7 @@ extension RegisterViewController {
         passwordTextField.isSecureTextEntry = true
         
         forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonClicked), for: .touchUpInside)
-        
         registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
-        
     }
     
     private func setLocalize() {
