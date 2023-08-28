@@ -29,7 +29,7 @@ final class LoginViewModel: BaseViewModel<LoginRouter>, LoginViewProtocol {
     }
     
     func showNotes() {
-        
+        router.presentNotes()
     }
 }
 

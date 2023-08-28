@@ -52,7 +52,6 @@ final class LoginViewController: BaseViewController<LoginViewModel> {
         actionButtonTapped()
         subscribeViewModel()
     }
-    
 }
 
 // MARK: - UILayout

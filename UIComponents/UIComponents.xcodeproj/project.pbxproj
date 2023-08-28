@@ -26,6 +26,9 @@
 		FA7115132A7A83F7003FF3E4 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7115122A7A83F7003FF3E4 /* Localize.swift */; };
 		FAA4A5B12A9611E5003233F1 /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5B02A9611E5003233F1 /* ButtonFactory.swift */; };
 		FAA4A5BE2A972D13003233F1 /* BottomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5BD2A972D13003233F1 /* BottomButtonView.swift */; };
+		FAB925252A9BE0D300C432A5 /* NotesTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB925232A9BE0D300C432A5 /* NotesTableViewCellModel.swift */; };
+		FAB925262A9BE0D300C432A5 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB925242A9BE0D300C432A5 /* NotesTableViewCell.swift */; };
+		FAB925292A9BE39400C432A5 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB925282A9BE39400C432A5 /* ReusableView.swift */; };
 		FAD638952A7A8BEF00F83932 /* Pods_UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC543CDA9F61AFFAD09560B9 /* Pods_UIComponents.framework */; };
 		FAD638962A7A8BEF00F83932 /* Pods_UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC543CDA9F61AFFAD09560B9 /* Pods_UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAD6389D2A7A97D600F83932 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD638992A7A97D600F83932 /* Nunito-SemiBold.ttf */; };
@@ -74,6 +77,9 @@
 		FA7115122A7A83F7003FF3E4 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		FAA4A5B02A9611E5003233F1 /* ButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
 		FAA4A5BD2A972D13003233F1 /* BottomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtonView.swift; sourceTree = "<group>"; };
+		FAB925232A9BE0D300C432A5 /* NotesTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCellModel.swift; sourceTree = "<group>"; };
+		FAB925242A9BE0D300C432A5 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		FAB925282A9BE39400C432A5 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		FAD638992A7A97D600F83932 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		FAD6389B2A7A97D600F83932 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
 		FAD6389C2A7A97D600F83932 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
@@ -195,6 +201,23 @@
 			path = ButtonFactory;
 			sourceTree = "<group>";
 		};
+		FAB925222A9BE0AF00C432A5 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				FAB925242A9BE0D300C432A5 /* NotesTableViewCell.swift */,
+				FAB925232A9BE0D300C432A5 /* NotesTableViewCellModel.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		FAB925272A9BE37B00C432A5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAB925282A9BE39400C432A5 /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		FAD638982A7A968500F83932 /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +248,8 @@
 		FAF94F3D2A7A6E5D0007D010 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FAB925272A9BE37B00C432A5 /* Protocols */,
+				FAB925222A9BE0AF00C432A5 /* Notes */,
 				FAA4A5AF2A9611D7003233F1 /* ButtonFactory */,
 				FA131BE02A94C12100315746 /* UIView */,
 				FA361A812A932B4200F8C08D /* UIActivityIndicatorView */,
@@ -387,11 +412,14 @@
 				FA361A772A932A4C00F8C08D /* LoadingProtocol.swift in Sources */,
 				FA361A7E2A932AD100F8C08D /* ToastPresenter.swift in Sources */,
 				FAD638A62A7A9BA200F83932 /* UIFont+Extensions.swift in Sources */,
+				FAB925262A9BE0D300C432A5 /* NotesTableViewCell.swift in Sources */,
 				FA361A832A932B5300F8C08D /* ActivityIndicatorView.swift in Sources */,
 				FA131BE22A94C13D00315746 /* TitleView.swift in Sources */,
 				FA7115052A7A8067003FF3E4 /* Assets.swift in Sources */,
 				FA71150F2A7A8132003FF3E4 /* UIImage+Images.swift in Sources */,
+				FAB925292A9BE39400C432A5 /* ReusableView.swift in Sources */,
 				FA7115112A7A8166003FF3E4 /* UIColor+Colors.swift in Sources */,
+				FAB925252A9BE0D300C432A5 /* NotesTableViewCellModel.swift in Sources */,
 				FAA4A5BE2A972D13003233F1 /* BottomButtonView.swift in Sources */,
 				FAD638A82A7A9BDA00F83932 /* FloatLabelTextField.swift in Sources */,
 				FA7115032A7A8051003FF3E4 /* UIImage+Icons.swift in Sources */,

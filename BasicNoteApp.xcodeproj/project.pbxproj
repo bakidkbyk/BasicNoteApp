@@ -31,6 +31,10 @@
 		FAA4A5C42A97C0BE003233F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5C12A97C0BE003233F1 /* LoginViewController.swift */; };
 		FAA4A5C52A97C0BE003233F1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5C22A97C0BE003233F1 /* LoginViewModel.swift */; };
 		FAA4A5C72A97C0CB003233F1 /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5C62A97C0CB003233F1 /* LoginRoute.swift */; };
+		FAB9251D2A9BE00E00C432A5 /* NotesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9251A2A9BE00E00C432A5 /* NotesRouter.swift */; };
+		FAB9251E2A9BE00E00C432A5 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9251B2A9BE00E00C432A5 /* NotesViewController.swift */; };
+		FAB9251F2A9BE00E00C432A5 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9251C2A9BE00E00C432A5 /* NotesViewModel.swift */; };
+		FAB925212A9BE02400C432A5 /* NotesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB925202A9BE02400C432A5 /* NotesRoute.swift */; };
 		FAF5FF342A927DBE00C6AB8F /* APIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF332A927DBE00C6AB8F /* APIDataProvider.swift */; };
 		FAF5FF362A927DFC00C6AB8F /* APIRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF352A927DFC00C6AB8F /* APIRequestInterceptor.swift */; };
 		FAF5FF382A927E1300C6AB8F /* APIRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF372A927E1300C6AB8F /* APIRequestAdapter.swift */; };
@@ -90,6 +94,10 @@
 		FAA4A5C12A97C0BE003233F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAA4A5C22A97C0BE003233F1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FAA4A5C62A97C0CB003233F1 /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
+		FAB9251A2A9BE00E00C432A5 /* NotesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesRouter.swift; sourceTree = "<group>"; };
+		FAB9251B2A9BE00E00C432A5 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		FAB9251C2A9BE00E00C432A5 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		FAB925202A9BE02400C432A5 /* NotesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesRoute.swift; sourceTree = "<group>"; };
 		FAF5FF332A927DBE00C6AB8F /* APIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataProvider.swift; sourceTree = "<group>"; };
 		FAF5FF352A927DFC00C6AB8F /* APIRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestInterceptor.swift; sourceTree = "<group>"; };
 		FAF5FF372A927E1300C6AB8F /* APIRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestAdapter.swift; sourceTree = "<group>"; };
@@ -176,8 +184,9 @@
 		FA361A552A93265300F8C08D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				FA131BE32A94C36400315746 /* Auth */,
 				FA361A562A93265A00F8C08D /* Base */,
+				FA131BE32A94C36400315746 /* Auth */,
+				FAB925192A9BDCA100C432A5 /* Notes */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -242,6 +251,17 @@
 				FAA4A5C62A97C0CB003233F1 /* LoginRoute.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		FAB925192A9BDCA100C432A5 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				FAB9251B2A9BE00E00C432A5 /* NotesViewController.swift */,
+				FAB9251C2A9BE00E00C432A5 /* NotesViewModel.swift */,
+				FAB9251A2A9BE00E00C432A5 /* NotesRouter.swift */,
+				FAB925202A9BE02400C432A5 /* NotesRoute.swift */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 		FAF5FF322A927DA400C6AB8F /* DataProvider */ = {
@@ -442,6 +462,8 @@
 				FAA4A5C52A97C0BE003233F1 /* LoginViewModel.swift in Sources */,
 				FAF5FF452A92812B00C6AB8F /* PushTransition.swift in Sources */,
 				FAF5FF412A92810300C6AB8F /* ModalTransition.swift in Sources */,
+				FAB925212A9BE02400C432A5 /* NotesRoute.swift in Sources */,
+				FAB9251F2A9BE00E00C432A5 /* NotesViewModel.swift in Sources */,
 				FAF5FF3A2A927E2A00C6AB8F /* APILogger.swift in Sources */,
 				FA131BF32A94CBD900315746 /* RegisterRoute.swift in Sources */,
 				FAF5FF432A92811500C6AB8F /* PlaceOnWindowTransition.swift in Sources */,
@@ -465,8 +487,10 @@
 				FA0E59322A9A72EF00091C7B /* ForgotPasswordRoute.swift in Sources */,
 				FAF5FF4F2A9281BA00C6AB8F /* Router.swift in Sources */,
 				FA9BE7B82A79242F00271907 /* AppDelegate.swift in Sources */,
+				FAB9251E2A9BE00E00C432A5 /* NotesViewController.swift in Sources */,
 				FAA4A5B42A9671F6003233F1 /* Validation.swift in Sources */,
 				FAF5FF342A927DBE00C6AB8F /* APIDataProvider.swift in Sources */,
+				FAB9251D2A9BE00E00C432A5 /* NotesRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
