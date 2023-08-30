@@ -24,6 +24,7 @@
 		FA71150F2A7A8132003FF3E4 /* UIImage+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71150E2A7A8132003FF3E4 /* UIImage+Images.swift */; };
 		FA7115112A7A8166003FF3E4 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7115102A7A8166003FF3E4 /* UIColor+Colors.swift */; };
 		FA7115132A7A83F7003FF3E4 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7115122A7A83F7003FF3E4 /* Localize.swift */; };
+		FA79390A2A9D334E0070C7CF /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7939092A9D334E0070C7CF /* UITableView+Extension.swift */; };
 		FAA4A5B12A9611E5003233F1 /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5B02A9611E5003233F1 /* ButtonFactory.swift */; };
 		FAA4A5BE2A972D13003233F1 /* BottomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4A5BD2A972D13003233F1 /* BottomButtonView.swift */; };
 		FAB925252A9BE0D300C432A5 /* NotesTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB925232A9BE0D300C432A5 /* NotesTableViewCellModel.swift */; };
@@ -75,6 +76,7 @@
 		FA71150E2A7A8132003FF3E4 /* UIImage+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Images.swift"; sourceTree = "<group>"; };
 		FA7115102A7A8166003FF3E4 /* UIColor+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
 		FA7115122A7A83F7003FF3E4 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		FA7939092A9D334E0070C7CF /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		FAA4A5B02A9611E5003233F1 /* ButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
 		FAA4A5BD2A972D13003233F1 /* BottomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtonView.swift; sourceTree = "<group>"; };
 		FAB925232A9BE0D300C432A5 /* NotesTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCellModel.swift; sourceTree = "<group>"; };
@@ -193,6 +195,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		FA7939082A9D326D0070C7CF /* Extensions  */ = {
+			isa = PBXGroup;
+			children = (
+				FA7939092A9D334E0070C7CF /* UITableView+Extension.swift */,
+			);
+			path = "Extensions ";
+			sourceTree = "<group>";
+		};
 		FAA4A5AF2A9611D7003233F1 /* ButtonFactory */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +258,7 @@
 		FAF94F3D2A7A6E5D0007D010 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FA7939082A9D326D0070C7CF /* Extensions  */,
 				FAB925272A9BE37B00C432A5 /* Protocols */,
 				FAB925222A9BE0AF00C432A5 /* Notes */,
 				FAA4A5AF2A9611D7003233F1 /* ButtonFactory */,
@@ -416,6 +427,7 @@
 				FA361A832A932B5300F8C08D /* ActivityIndicatorView.swift in Sources */,
 				FA131BE22A94C13D00315746 /* TitleView.swift in Sources */,
 				FA7115052A7A8067003FF3E4 /* Assets.swift in Sources */,
+				FA79390A2A9D334E0070C7CF /* UITableView+Extension.swift in Sources */,
 				FA71150F2A7A8132003FF3E4 /* UIImage+Images.swift in Sources */,
 				FAB925292A9BE39400C432A5 /* ReusableView.swift in Sources */,
 				FA7115112A7A8166003FF3E4 /* UIColor+Colors.swift in Sources */,

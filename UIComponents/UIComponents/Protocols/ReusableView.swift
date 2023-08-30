@@ -5,6 +5,8 @@
 //  Created by Baki Dikbıyık on 27.08.2023.
 //
 
+import UIKit
+
 public protocol ReusableView: AnyObject {
     static var reuseIdentifier: String { get }
 }

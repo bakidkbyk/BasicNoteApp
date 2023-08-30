@@ -41,6 +41,13 @@ public enum L10n {
     public static let title = L10n.tr("Localizable", "Login.title")
   }
 
+  public enum Notes {
+    /// + Add Note
+    public static let addNoteButton = L10n.tr("Localizable", "Notes.addNoteButton")
+    /// Search...
+    public static let searchBarPlaceHolder = L10n.tr("Localizable", "Notes.searchBarPlaceHolder")
+  }
+
   public enum Register {
     /// Email Adress
     public static let email = L10n.tr("Localizable", "Register.email")

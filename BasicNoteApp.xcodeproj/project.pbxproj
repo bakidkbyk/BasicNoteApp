@@ -181,6 +181,17 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		FA18A9672A9F27070007DB24 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				FAB9251B2A9BE00E00C432A5 /* NotesViewController.swift */,
+				FAB9251C2A9BE00E00C432A5 /* NotesViewModel.swift */,
+				FAB9251A2A9BE00E00C432A5 /* NotesRouter.swift */,
+				FAB925202A9BE02400C432A5 /* NotesRoute.swift */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
 		FA361A552A93265300F8C08D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,10 +267,7 @@
 		FAB925192A9BDCA100C432A5 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				FAB9251B2A9BE00E00C432A5 /* NotesViewController.swift */,
-				FAB9251C2A9BE00E00C432A5 /* NotesViewModel.swift */,
-				FAB9251A2A9BE00E00C432A5 /* NotesRouter.swift */,
-				FAB925202A9BE02400C432A5 /* NotesRoute.swift */,
+				FA18A9672A9F27070007DB24 /* Note */,
 			);
 			path = Notes;
 			sourceTree = "<group>";

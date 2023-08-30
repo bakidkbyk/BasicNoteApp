@@ -15,11 +15,12 @@ extension NotesRoute where Self: RouterProtocol {
         let router = NotesRouter()
         let viewModel = NotesViewModel(router: router)
         let viewController = NotesViewController(viewModel: viewModel)
+        let navigationController = UINavigationController(rootViewController: viewController)
         
-        let transition = ModalTransition()
+        let transition = PlaceOnWindowTransition()
         router.viewController = viewController
         router.openTransition = transition
         
-        open(viewController, transition: transition)
+        open(navigationController, transition: transition)
     }
 }

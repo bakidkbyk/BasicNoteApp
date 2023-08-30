@@ -5,8 +5,6 @@
 //  Created by Baki Dikbıyık on 27.08.2023.
 //
 
-import Foundation
-
 public protocol NotesTableViewCellDataSource: AnyObject {}
 
 public protocol NotesTableViewCellEventSource: AnyObject {}

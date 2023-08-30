@@ -42,3 +42,8 @@
 the instructions.";
 "Forgot.email" = "Email Adress";
 "Forgot.registerButton" = "Reset Password";
+
+// MARK: - Notes View Controller
+"Notes.searchBarPlaceHolder" = "Search...";
+"Notes.addNoteButton" = "+ Add Note";
+
