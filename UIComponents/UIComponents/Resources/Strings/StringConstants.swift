@@ -44,6 +44,12 @@ public enum L10n {
   public enum Notes {
     /// + Add Note
     public static let addNoteButton = L10n.tr("Localizable", "Notes.addNoteButton")
+    /// İptal
+    public static let cancel = L10n.tr("Localizable", "Notes.cancel")
+    /// Sil
+    public static let delete = L10n.tr("Localizable", "Notes.delete")
+    /// Düzenle
+    public static let edit = L10n.tr("Localizable", "Notes.edit")
     /// Search...
     public static let searchBarPlaceHolder = L10n.tr("Localizable", "Notes.searchBarPlaceHolder")
   }

@@ -16,6 +16,7 @@
 		FA131BE92A94C39200315746 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA131BE62A94C39200315746 /* RegisterViewController.swift */; };
 		FA131BEA2A94C39200315746 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA131BE72A94C39200315746 /* RegisterViewModel.swift */; };
 		FA131BF32A94CBD900315746 /* RegisterRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA131BF22A94CBD900315746 /* RegisterRoute.swift */; };
+		FA18A9722A9F80340007DB24 /* NotesActionsAlertRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18A9712A9F80340007DB24 /* NotesActionsAlertRoute.swift */; };
 		FA2732612A7D821100B3A5F1 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2732602A7D821100B3A5F1 /* DataProvider.framework */; };
 		FA2732622A7D821100B3A5F1 /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA2732602A7D821100B3A5F1 /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA361A582A93266C00F8C08D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA361A572A93266C00F8C08D /* BaseViewController.swift */; };
@@ -79,6 +80,7 @@
 		FA131BE62A94C39200315746 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FA131BE72A94C39200315746 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		FA131BF22A94CBD900315746 /* RegisterRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRoute.swift; sourceTree = "<group>"; };
+		FA18A9712A9F80340007DB24 /* NotesActionsAlertRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesActionsAlertRoute.swift; sourceTree = "<group>"; };
 		FA2732602A7D821100B3A5F1 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA361A572A93266C00F8C08D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FA361A592A93267D00F8C08D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				FAF5FF4B2A9281A200C6AB8F /* Core */,
 				FAF5FF482A92814F00C6AB8F /* Routers */,
 				FAF5FF3F2A9280E800C6AB8F /* Transitions */,
+				FA18A9712A9F80340007DB24 /* NotesActionsAlertRoute.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				FAA4A5C42A97C0BE003233F1 /* LoginViewController.swift in Sources */,
 				FAF5FF362A927DFC00C6AB8F /* APIRequestInterceptor.swift in Sources */,
 				FA0E59302A9A72DB00091C7B /* ForgotPasswordViewModel.swift in Sources */,
+				FA18A9722A9F80340007DB24 /* NotesActionsAlertRoute.swift in Sources */,
 				FAF5FF472A92813F00C6AB8F /* Transition.swift in Sources */,
 				FAF5FF382A927E1300C6AB8F /* APIRequestAdapter.swift in Sources */,
 				FAF5FF4D2A9281A900C6AB8F /* Animator.swift in Sources */,

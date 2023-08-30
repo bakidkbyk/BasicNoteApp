@@ -43,7 +43,10 @@ the instructions.";
 "Forgot.email" = "Email Adress";
 "Forgot.registerButton" = "Reset Password";
 
-// MARK: - Notes View Controller
+// MARK: - Notes
 "Notes.searchBarPlaceHolder" = "Search...";
 "Notes.addNoteButton" = "+ Add Note";
+"Notes.edit" = "Düzenle";
+"Notes.delete" = "Sil";
+"Notes.cancel" = "İptal";
 
