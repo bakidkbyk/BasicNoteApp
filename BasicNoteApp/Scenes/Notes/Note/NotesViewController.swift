@@ -59,7 +59,6 @@ extension NotesViewController {
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.searchBar.setShowsCancelButton(false, animated: false)
         
-        // self.navigationItem.searchController = searchController
         self.navigationItem.titleView = searchController.searchBar
         self.definesPresentationContext = false
         self.navigationItem.hidesSearchBarWhenScrolling = false
