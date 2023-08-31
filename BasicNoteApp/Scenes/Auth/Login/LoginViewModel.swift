@@ -29,7 +29,7 @@ final class LoginViewModel: BaseViewModel<LoginRouter>, LoginViewProtocol {
     }
     
     func showNotes() {
-        router.presentNotes()
+        // TODO: - Notes ekranı için route eklenecek
     }
 }
 
