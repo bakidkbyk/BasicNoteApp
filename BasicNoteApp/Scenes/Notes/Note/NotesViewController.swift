@@ -5,9 +5,13 @@
 //  Created by Baki Dikbıyık on 27.08.2023.
 //
 
-final class NotesViewController: BaseViewController<NotesViewModel> {
+import UIKit
 
+final class NotesViewController: BaseViewController<NotesViewModel> {
+    
     let searchController = UISearchController(searchResultsController: nil)
+    
+    private let profileButton = UIButton(type: .custom)
     
     private let tableView = UITableViewBuilder()
         .build()
@@ -19,6 +23,8 @@ final class NotesViewController: BaseViewController<NotesViewModel> {
         addSubviews()
         configureContents()
         setLocalize()
+        setNavigationProfileIcon()
+        setNavigationMenuIcon()
     }
 }
 
@@ -30,9 +36,6 @@ extension NotesViewController {
         addNoteButton()
     }
     
-    private func addSearchBar() {
-        
-    }
     private func addTableView() {
         view.addSubview(tableView)
         tableView.edgesToSuperview()
@@ -56,10 +59,11 @@ extension NotesViewController {
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.searchBar.setShowsCancelButton(false, animated: false)
         
-        self.navigationItem.searchController = searchController
+        // self.navigationItem.searchController = searchController
+        self.navigationItem.titleView = searchController.searchBar
         self.definesPresentationContext = false
         self.navigationItem.hidesSearchBarWhenScrolling = false
-        
+
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(NotesTableViewCell.self)
@@ -69,9 +73,31 @@ extension NotesViewController {
         searchController.searchBar.placeholder = L10n.Notes.searchBarPlaceHolder
         actionNoteButton.setTitle(L10n.Notes.addNoteButton, for: .normal)
     }
+    
+    private func setNavigationProfileIcon() {
+        profileButton.setImage(UIImage.imgUser, for: UIControl.State.normal)
+        profileButton.addTarget(self, action: #selector(profileImageTapped), for: UIControl.Event.touchUpInside)
+        
+        let barButton = UIBarButtonItem(customView: profileButton)
+        
+        self.navigationItem.rightBarButtonItem = barButton
+    }
+    
+    private func setNavigationMenuIcon() {
+        let menuImage = UIImage.icMenu
+        menuImage.withRenderingMode(.alwaysOriginal)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: menuImage, style: .done, target: self, action: nil)
+    }
 }
 
 // MARK: - Actions
+extension NotesViewController {
+    
+    @objc
+    func profileImageTapped() {
+        // TODO: - Profil Sayfasına yönlendirme yapılacak.
+    }
+}
 
 // MARK: Search Controller
 extension NotesViewController: UISearchResultsUpdating {
