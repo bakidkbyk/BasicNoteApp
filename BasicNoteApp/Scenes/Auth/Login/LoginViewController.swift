@@ -5,10 +5,6 @@
 //  Created by Baki Dikbıyık on 24.08.2023.
 //
 
-import UIKit
-import MobilliumBuilders
-import UIComponents
-
 final class LoginViewController: BaseViewController<LoginViewModel> {
     
     private let scrollView = UIScrollViewBuilder()
@@ -149,7 +145,7 @@ extension LoginViewController {
     func registerButtonAction() {
         guard let email = emailTextField.text,
               let password = passwordTextField.text else {
-            self.showWarningToast(message: L10n.Toast.emptyFields, type: .fail)
+            self.showWarningToast(message: L10n.Toast.emptyFields)
             return
         }
         

@@ -45,7 +45,7 @@ extension LoginViewModel {
             switch result {
             case .success(let response):
                 self.keychainSwift.set(response.data?.accessToken ?? "", forKey: Keychain.token)
-                self.showWarningToast?(L10n.Toast.success)
+                self.showSuccessToast?(L10n.Toast.success)
                 self.loginClosure?()
             case .failure(let error):
                 self.showWarningToast?(error.localizedDescription)

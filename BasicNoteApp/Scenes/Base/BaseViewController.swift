@@ -49,11 +49,17 @@ class BaseViewController<V: BaseViewModeProtocol>: UIViewController, BaseViewCon
     
     private func subscribeToast() {
         viewModel.showWarningToast = { text in
-            ToastPresenter.showWarningToast(text: text, type: .fail)
+            ToastPresenter.showWarningToast(text: text)
         }
+        
+        viewModel.showSuccessToast = { text in
+            ToastPresenter.showSuccessToast(text: text)
+        }
+        
+        
     }
     
-    func showWarningToast(message: String, type: Type) {
-        ToastPresenter.showWarningToast(text: message, type: type)
+    func showWarningToast(message: String) {
+        ToastPresenter.showWarningToast(text: message)
     }
 }

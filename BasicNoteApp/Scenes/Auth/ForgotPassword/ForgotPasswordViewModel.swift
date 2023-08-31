@@ -5,8 +5,6 @@
 //  Created by Baki Dikbıyık on 26.08.2023.
 //
 
-import Foundation
-
 protocol ForgotPasswordViewDataSource {}
 
 protocol ForgotPasswordViewEventSource {}
@@ -26,7 +24,8 @@ extension ForgotPasswordViewModel {
             self.hideLoading?()
             switch result {
             case .success:
-                self.showWarningToast?(L10n.Toast.forgotPasswordRequestSuccess)
+                self.showSuccessToast?(L10n.Toast.forgotPasswordRequestSuccess)
+                self.router.close()
             case .failure(let error):
                 self.showWarningToast?(error.localizedDescription)
             }

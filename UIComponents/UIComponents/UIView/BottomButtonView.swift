@@ -25,6 +25,7 @@ public class BottomButtonView: UIView {
         .build()
     
     public var bottomButtonTapped: VoidClosure?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubViews()
