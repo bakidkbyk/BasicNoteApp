@@ -1,5 +1,5 @@
 //
-//  notesActionsAlertRoute.swift
+//  NotesActionsAlertRoute.swift
 //  BasicNoteApp
 //
 //  Created by Baki Dikbıyık on 30.08.2023.
@@ -14,11 +14,11 @@ extension NotesActionsAlertRoute where Self: RouterProtocol {
     func notesActions(editAction: VoidClosure?, deleteAction: VoidClosure?) {
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
-        let edit = UIAlertAction(title: L10n.Notes.edit, style: .destructive) { _ in
+        let edit = UIAlertAction(title: L10n.Notes.edit, style: .destructive) { [weak self] _ in
             editAction?()
         }
         
-        let delete = UIAlertAction(title: L10n.Notes.delete, style: .destructive) { _ in
+        let delete = UIAlertAction(title: L10n.Notes.delete, style: .destructive) { [weak self] _ in
             deleteAction?()
         }
         

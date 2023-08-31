@@ -44,11 +44,11 @@ public enum L10n {
   public enum Notes {
     /// + Add Note
     public static let addNoteButton = L10n.tr("Localizable", "Notes.addNoteButton")
-    /// İptal
+    /// Cancel
     public static let cancel = L10n.tr("Localizable", "Notes.cancel")
-    /// Sil
+    /// Delete
     public static let delete = L10n.tr("Localizable", "Notes.delete")
-    /// Düzenle
+    /// Edit
     public static let edit = L10n.tr("Localizable", "Notes.edit")
     /// Search...
     public static let searchBarPlaceHolder = L10n.tr("Localizable", "Notes.searchBarPlaceHolder")
@@ -76,19 +76,19 @@ public enum L10n {
   }
 
   public enum Toast {
-    /// Lütfen geçerli bir email adresi giriniz
+    /// Please enter a email
     public static let emptyEmail = L10n.tr("Localizable", "Toast.emptyEmail")
-    /// Lütfen boş alanları doldurunuz
+    /// Please fill in the blanks
     public static let emptyFields = L10n.tr("Localizable", "Toast.emptyFields")
-    /// Lütfen geçerli bir isim giriniz
+    /// Please enter a valid name
     public static let emptyFullName = L10n.tr("Localizable", "Toast.emptyFullName")
-    /// Lütfen geçerli bir parola giriniz
+    /// Please enter a password
     public static let emptyPassword = L10n.tr("Localizable", "Toast.emptyPassword")
-    /// Lütfen Tekrar Deneyiniz
+    /// Please try again
     public static let fail = L10n.tr("Localizable", "Toast.fail")
-    /// Şifre yenileme isteğiniz başarılı bir şekilde yollanmıştır
+    /// Your password reset request has been sent successfully
     public static let forgotPasswordRequestSuccess = L10n.tr("Localizable", "Toast.forgotPasswordRequestSuccess")
-    /// Giriş Başarılı
+    /// Login Succeed 
     public static let success = L10n.tr("Localizable", "Toast.success")
   }
 }
