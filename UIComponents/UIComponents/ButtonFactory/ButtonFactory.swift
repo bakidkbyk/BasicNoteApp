@@ -14,9 +14,18 @@ public class ButtonFactory {
         var height: CGFloat {
             switch self {
             case .small:
-                return 17
+                return 41
             case .large:
                 return 63
+            }
+        }
+        
+        var width: CGFloat {
+            switch self {
+            case .small:
+                return 142
+            case .large:
+                return 327
             }
         }
         
@@ -32,13 +41,14 @@ public class ButtonFactory {
     
     public static func createPrimaryButton(style: Style) -> UIButton {
         let button = UIButtonBuilder()
-            .titleFont(.font(.nunitoBold, size: style.fontSize))
+            .titleFont(.font(.nunitoSemiBold, size: style.fontSize))
             .titleColor(.actionSecondary)
             .backgroundColor(.actionPrimary)
             .cornerRadius(4)
             .build()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.heightAnchor.constraint(equalToConstant: style.height).isActive = true
+        button.widthAnchor.constraint(equalToConstant: style.width).isActive = true
         button.layer.masksToBounds = true
         button.clipsToBounds = true
         return button
