@@ -36,6 +36,10 @@
 		FAB9251E2A9BE00E00C432A5 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9251B2A9BE00E00C432A5 /* NotesViewController.swift */; };
 		FAB9251F2A9BE00E00C432A5 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9251C2A9BE00E00C432A5 /* NotesViewModel.swift */; };
 		FAB925212A9BE02400C432A5 /* NotesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB925202A9BE02400C432A5 /* NotesRoute.swift */; };
+		FAF38C4C2AA093F5001A6033 /* EditNoteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF38C492AA093F5001A6033 /* EditNoteRouter.swift */; };
+		FAF38C4D2AA093F5001A6033 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF38C4A2AA093F5001A6033 /* EditNoteViewController.swift */; };
+		FAF38C4E2AA093F5001A6033 /* EditNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF38C4B2AA093F5001A6033 /* EditNoteViewModel.swift */; };
+		FAF38C502AA0940E001A6033 /* EditNoteRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF38C4F2AA0940E001A6033 /* EditNoteRoute.swift */; };
 		FAF5FF342A927DBE00C6AB8F /* APIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF332A927DBE00C6AB8F /* APIDataProvider.swift */; };
 		FAF5FF362A927DFC00C6AB8F /* APIRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF352A927DFC00C6AB8F /* APIRequestInterceptor.swift */; };
 		FAF5FF382A927E1300C6AB8F /* APIRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FF372A927E1300C6AB8F /* APIRequestAdapter.swift */; };
@@ -100,6 +104,10 @@
 		FAB9251B2A9BE00E00C432A5 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		FAB9251C2A9BE00E00C432A5 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
 		FAB925202A9BE02400C432A5 /* NotesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesRoute.swift; sourceTree = "<group>"; };
+		FAF38C492AA093F5001A6033 /* EditNoteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteRouter.swift; sourceTree = "<group>"; };
+		FAF38C4A2AA093F5001A6033 /* EditNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
+		FAF38C4B2AA093F5001A6033 /* EditNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewModel.swift; sourceTree = "<group>"; };
+		FAF38C4F2AA0940E001A6033 /* EditNoteRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteRoute.swift; sourceTree = "<group>"; };
 		FAF5FF332A927DBE00C6AB8F /* APIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataProvider.swift; sourceTree = "<group>"; };
 		FAF5FF352A927DFC00C6AB8F /* APIRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestInterceptor.swift; sourceTree = "<group>"; };
 		FAF5FF372A927E1300C6AB8F /* APIRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestAdapter.swift; sourceTree = "<group>"; };
@@ -270,8 +278,20 @@
 			isa = PBXGroup;
 			children = (
 				FA18A9672A9F27070007DB24 /* Note */,
+				FAF38C482AA093DE001A6033 /* Edit */,
 			);
 			path = Notes;
+			sourceTree = "<group>";
+		};
+		FAF38C482AA093DE001A6033 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				FAF38C4A2AA093F5001A6033 /* EditNoteViewController.swift */,
+				FAF38C4B2AA093F5001A6033 /* EditNoteViewModel.swift */,
+				FAF38C492AA093F5001A6033 /* EditNoteRouter.swift */,
+				FAF38C4F2AA0940E001A6033 /* EditNoteRoute.swift */,
+			);
+			path = Edit;
 			sourceTree = "<group>";
 		};
 		FAF5FF322A927DA400C6AB8F /* DataProvider */ = {
@@ -472,6 +492,8 @@
 			files = (
 				FAA4A5C52A97C0BE003233F1 /* LoginViewModel.swift in Sources */,
 				FAF5FF452A92812B00C6AB8F /* PushTransition.swift in Sources */,
+				FAF38C4C2AA093F5001A6033 /* EditNoteRouter.swift in Sources */,
+				FAF38C4D2AA093F5001A6033 /* EditNoteViewController.swift in Sources */,
 				FAF5FF412A92810300C6AB8F /* ModalTransition.swift in Sources */,
 				FAB925212A9BE02400C432A5 /* NotesRoute.swift in Sources */,
 				FAB9251F2A9BE00E00C432A5 /* NotesViewModel.swift in Sources */,
@@ -486,6 +508,7 @@
 				FA131BEA2A94C39200315746 /* RegisterViewModel.swift in Sources */,
 				FAA4A5C72A97C0CB003233F1 /* LoginRoute.swift in Sources */,
 				FAA4A5C42A97C0BE003233F1 /* LoginViewController.swift in Sources */,
+				FAF38C4E2AA093F5001A6033 /* EditNoteViewModel.swift in Sources */,
 				FAF5FF362A927DFC00C6AB8F /* APIRequestInterceptor.swift in Sources */,
 				FA0E59302A9A72DB00091C7B /* ForgotPasswordViewModel.swift in Sources */,
 				FA18A9722A9F80340007DB24 /* NotesActionsAlertRoute.swift in Sources */,
@@ -498,6 +521,7 @@
 				FA131BE92A94C39200315746 /* RegisterViewController.swift in Sources */,
 				FA0E59322A9A72EF00091C7B /* ForgotPasswordRoute.swift in Sources */,
 				FAF5FF4F2A9281BA00C6AB8F /* Router.swift in Sources */,
+				FAF38C502AA0940E001A6033 /* EditNoteRoute.swift in Sources */,
 				FA9BE7B82A79242F00271907 /* AppDelegate.swift in Sources */,
 				FAB9251E2A9BE00E00C432A5 /* NotesViewController.swift in Sources */,
 				FAA4A5B42A9671F6003233F1 /* Validation.swift in Sources */,

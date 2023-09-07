@@ -66,6 +66,8 @@ extension NotesViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(NotesTableViewCell.self)
+        
+        actionNoteButton.addTarget(self, action: #selector(addNoteButtonTapped), for: .touchUpInside)
     }
     
     private func setLocalize() {
@@ -86,6 +88,15 @@ extension NotesViewController {
         let menuImage = UIImage.icMenu
         menuImage.withRenderingMode(.alwaysOriginal)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: menuImage, style: .done, target: self, action: nil)
+    }
+}
+
+// MARK: - Actions
+extension NotesViewController {
+    
+    @objc
+    func addNoteButtonTapped() {
+        viewModel.showEditNote()
     }
 }
 

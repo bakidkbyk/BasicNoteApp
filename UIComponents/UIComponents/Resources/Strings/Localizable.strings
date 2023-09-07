@@ -38,7 +38,7 @@
 
 // MARK: - Forgot Password
 "Forgot.title" = "Forgot Password?";
-"Forgot.subTitle" = "Confirm your email and we’llsend
+"Forgot.subTitle" = "Confirm your email and we’ll send
 the instructions.";
 "Forgot.email" = "Email Adress";
 "Forgot.registerButton" = "Reset Password";
@@ -49,4 +49,7 @@ the instructions.";
 "Notes.edit" = "Edit";
 "Notes.delete" = "Delete";
 "Notes.cancel" = "Cancel";
+
+// MARK: - Edit Notes
+"EditNotes.saveButton" = "Save Button";
 

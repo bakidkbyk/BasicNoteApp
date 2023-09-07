@@ -11,12 +11,17 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
 
+  public enum EditNotes {
+    /// Save Button
+    public static let saveButton = L10n.tr("Localizable", "EditNotes.saveButton")
+  }
+
   public enum Forgot {
     /// Email Adress
     public static let email = L10n.tr("Localizable", "Forgot.email")
     /// Reset Password
     public static let registerButton = L10n.tr("Localizable", "Forgot.registerButton")
-    /// Confirm your email and we’llsend\nthe instructions.
+    /// Confirm your email and we’ll send\nthe instructions.
     public static let subTitle = L10n.tr("Localizable", "Forgot.subTitle")
     /// Forgot Password?
     public static let title = L10n.tr("Localizable", "Forgot.title")

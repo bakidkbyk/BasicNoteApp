@@ -38,6 +38,7 @@
 		FAD638A22A7A996400F83932 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD638A12A7A996400F83932 /* Fonts.swift */; };
 		FAD638A62A7A9BA200F83932 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD638A52A7A9BA200F83932 /* UIFont+Extensions.swift */; };
 		FAD638A82A7A9BDA00F83932 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD638A72A7A9BDA00F83932 /* FloatLabelTextField.swift */; };
+		FAF38C542AA0D892001A6033 /* EditNotesInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF38C532AA0D892001A6033 /* EditNotesInputView.swift */; };
 		FAF94F3F2A7A6E5D0007D010 /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF94F3E2A7A6E5D0007D010 /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		FAD638A12A7A996400F83932 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FAD638A52A7A9BA200F83932 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		FAD638A72A7A9BDA00F83932 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		FAF38C532AA0D892001A6033 /* EditNotesInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesInputView.swift; sourceTree = "<group>"; };
 		FAF94F3B2A7A6E5D0007D010 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF94F3E2A7A6E5D0007D010 /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 		FAF94F522A7A75290007D010 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				FA131BE12A94C13D00315746 /* TitleView.swift */,
 				FAA4A5BD2A972D13003233F1 /* BottomButtonView.swift */,
+				FAF38C532AA0D892001A6033 /* EditNotesInputView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				FA131BE22A94C13D00315746 /* TitleView.swift in Sources */,
 				FA7115052A7A8067003FF3E4 /* Assets.swift in Sources */,
 				FA79390A2A9D334E0070C7CF /* UITableView+Extension.swift in Sources */,
+				FAF38C542AA0D892001A6033 /* EditNotesInputView.swift in Sources */,
 				FA71150F2A7A8132003FF3E4 /* UIImage+Images.swift in Sources */,
 				FAB925292A9BE39400C432A5 /* ReusableView.swift in Sources */,
 				FA7115112A7A8166003FF3E4 /* UIColor+Colors.swift in Sources */,

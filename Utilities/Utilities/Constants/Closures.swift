@@ -6,4 +6,4 @@
 //
 
 public typealias VoidClosure = (() -> Void)
-public typealias StringClosure = ((String) -> Void)
+public typealias DoubleStringClosure = ((String, String) -> Void)

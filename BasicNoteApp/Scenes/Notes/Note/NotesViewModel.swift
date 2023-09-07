@@ -10,6 +10,7 @@ import Foundation
 protocol NotesViewDataSource {
     func numberOfItemsAt() -> Int
     func cellItemAt(_ indexPath: IndexPath) -> NotesTableViewCellProtocol
+    func showEditNote()
 }
 
 protocol NotesViewEventSource {}
@@ -17,6 +18,10 @@ protocol NotesViewEventSource {}
 protocol NotesViewProtocol: NotesViewDataSource, NotesViewEventSource {}
 
 final class NotesViewModel: BaseViewModel<NotesRouter>, NotesViewProtocol {
+    
+    func showEditNote() {
+        router.pushEditNote()
+    }
     
     func numberOfItemsAt() -> Int {
         let cell = cellItems.count
